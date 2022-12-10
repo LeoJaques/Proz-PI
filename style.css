@@ -1,0 +1,87 @@
+   
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--cor-azulclaro);
+  }
+  
+
+.logo{
+
+        height: 170px;
+        width: 170px;
+    }
+    main{
+    
+      background-size: cover;
+      padding: 60px 0;
+    }
+    
+    .imagens-texto{
+      display: flex;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: var(--cor-amarelo);
+
+    }
+.imagens-texto > article{
+
+     flex: 1 1 150px;
+      margin: 30px;
+}
+.sorvete{
+  font-size: 30px;
+  font-family: "lobster";
+  text-align: start;
+  padding: 50px;
+  background-image: url(assets/principal.png)
+}
+.text{
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  padding: 100px;
+}
+.hoje{
+  font-family: "lobster";
+  font-size: 40px;
+  background-color: var(--cor-rosa-bb);
+  text-align: center;
+  padding: 50px;
+}
+    a{
+      color: black;
+      font-size: 20px;
+      font-weight: 500;
+      text-decoration:none;
+      margin-right: 50px;
+  }
+
+   
+      section article img{
+        border-radius:30px ;
+      
+      }
+     
+      #button{
+        display: inline-block;
+        background-color: #F25A70;
+        height: 60px;
+        line-height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 5px 5px 0PX #000;
+        margin-right: 0;
+        border-radius: 30px;
+     }
+
+    
+
+    
+
+ 
+
+
+    

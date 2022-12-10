@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Poppins:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+    --cor-azulclaro: #AEE5E5;
+    --cor-rosa-bb: #F3C7E6;
+    --cor-amarelo: #FFEAA9;
+    --cor-rosa-escuro:#F25A70;
+  }
+
+
+  header{
+    border-bottom: 10px solid black;
+  }
+
+
+  a:hover{
+    background-color: #F25A70;
+    border-radius: 30px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0;
+    color:#000;
+
+}
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 2%;
+  }
+
+
+  
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+
+h1{
+  line-height: 50px;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+}
+
+h2{
+
+  font-family: "lobster";
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+}
+h3{
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.1px;
+    font-weight: 400; 
+}
+li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+   
