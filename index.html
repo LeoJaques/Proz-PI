@@ -7,6 +7,7 @@
   <title>Sweet Dreams</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="padrao.css">
+  <link rel="stylesheet" href="footer.css">
 
   </head>
 
@@ -19,14 +20,13 @@
           <nav>
             <ul class="menu">
 
-              <a href="#">Inicio </a> 
-              <a href="#">Quem Somos </a> 
-              <a href="#">Missão </a> 
-              <a href="#">Produtos </a> 
-              <a id="button" lang="end" href="#"> Localização </a> 
+              <a class="main-menu" href="#">Inicio </a> 
+              <a  class="main-menu" href="#">Quem Somos </a> 
+              <a class="main-menu" href="#">Missão </a> 
+              <a class="main-menu" href="#">Produtos </a> 
+              <a class="main-menu" id="button" lang="end" href="#"> Localização </a> 
 
             </ul>
-           
           </nav>
       </header>
 
@@ -85,25 +85,42 @@
      </main>
 
       </header>
-      <footer>
-        <h3>Contatos:</h3>
-        <p>Telefone:(11) 9999999-99999</p>
-        <img src="assets/icons/whatsapp.png" width="20px" alt="whatsapp">
-        <p><br>Rua:av.Brasil,Bairro 31 de Janeiro,SP
-        </p>
-        <h3>Sigam-nos nas redes sociais!</h3>
-        <a href="">
+      <footer class="main-footer">
+      
+       <div class="contato">
+       <h3>Contatos:</h3>
+      <p>Telefone:(11) 9999999-99999</p>
+      <p><br>Rua:av.Brasil,Bairro 31 de Janeiro,SP
+      </p>
+      </div>
+       
+
+        <div>
+          <input type="email" name="" id="Digite seu email">
+          <button>Enviar</button>
+
+        </div>
+
+      <div class="midias-sociais">
+
+       <h3>Sigam-nos nas redes sociais!</h3>
+
+        <a class="footer-img" href="">
         <img src="assets/icons/facebook.png" width="20px"alt="facebook">
-      </a>
-      <a href="">
+        </a>
+
+         <a class="footer-img" href="">
         <img src="assets/icons/instagram.png" width="20px"alt="instagram">
-      </a>
-      <a href="">
-        <img src="assets/icons/twitter.png" width="20px" alt="twitter">
-      </a>
-      <a href="">
-        <img src="assets/icons/tik-tok.png"width="20px" alt="tik-tok">
-      </a>
+        </a>
+
+         <a class="footer-img" href="">
+         <img src="assets/icons/twitter.png" width="20px" alt="twitter">
+         </a>
+
+         <a class="footer-img" href="">
+          <img src="assets/icons/tik-tok.png"width="20px" alt="tik-tok">
+         </a>
+         </div>
     </footer>
   </body>
   </html>

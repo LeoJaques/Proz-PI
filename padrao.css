@@ -23,7 +23,7 @@ html{
   }
 
 
-  a:hover{
+  .container .menu .main-menu:hover{
     background-color: #F25A70;
     border-radius: 30px;
     font-weight: bold;
@@ -39,14 +39,7 @@ html{
     max-width: 100%;
     display: block;
   }
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 40px 2%;
-  }
-
-
-  
+ 
 p{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
