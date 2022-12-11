@@ -13,69 +13,89 @@ header {
 
         height: 170px;
         width: 170px;
+        margin-left: 100px;
     }
     main{
     
       background-size: cover;
-      padding: 60px 0;
+    }
+  nav{
+    text-align: right;
+  }
+ 
+    .container .menu .main-menu{
+      line-height: 50px;
+      height: 100%;
+      font-family: 'Alfa Slab One', cursive;
+      font-size: 20px;
+      margin-right: 30px;
+      display: inline-block;
+      position: relative;
+      text-transform: uppercase;
+      color: black;
+  }
+  
+  .container .menu .main-menu:hover{
+    background-color: #F25A70;
+    border-radius: 30px;
+    color:#000;
+}
+
+    .bloco{
+      background-color: var(--cor-amarelo);
     }
     
     .imagens-texto{
       display: flex;
       max-width: 800px;
-      margin: 0 auto;
-      background-color: var(--cor-amarelo);
-
+       margin: 0 auto;
+    
     }
-.imagens-texto > article{
+    
+     .imagens-texto > article{
 
      flex: 1 1 150px;
       margin: 30px;
 }
 .sorvete{
-  font-size: 30px;
-  font-family: "lobster";
-  text-align: start;
-  padding: 50px;
-  background-image: url(assets/principal.png)
+  font-size: 35px;
+  margin-top: 50px;
+  margin-left: 40px;
 }
-.text{
-  font-family: 'Poppins', sans-serif;
-  text-align: justify;
-  padding: 100px;
+main section.container{
+  background-image: url(assets/principal.png);
 }
-.hoje{
+
+      .text{
+        font-family: 'Poppins', sans-serif;
+        text-align: justify;
+        padding: 100px;
+      }
+
+   .hoje-tem{
   font-family: "lobster";
   font-size: 40px;
   background-color: var(--cor-rosa-bb);
   text-align: center;
   padding: 50px;
-}
-    .container .menu .main-menu{
-      color: black;
-      font-size: 20px;
-      font-weight: 500;
-      text-decoration:none;
-      margin-right: 50px;
   }
 
    
-      section article img{
-        border-radius:30px ;
-      
-      }
+ section article img{
+  border-radius:30px ;
+  }
      
-      #button{
-        display: inline-block;
-        background-color: #F25A70;
-        height: 60px;
-        line-height: 60px;
-        padding-left: 20px;
-        padding-right: 20px;
-        box-shadow: 5px 5px 0PX #000;
-        margin-right: 0;
-        border-radius: 30px;
-     }
+ #button{
+  display: inline-block;
+  background-color: #F25A70;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 5px 5px 0PX #000;
+  margin-right: 0;
+  border-radius: 30px;
+ }
 
     
 
