@@ -1,59 +1,134 @@
-* {
-    preenchimento: 0;
-    margem: 0;
-    box-sizing: border-box;
-  }
-  
-  li {
-    tipo de estilo de lista: nenhum;
-  }
-  
-  um {
-    texto-decoração: nenhuma;
-    cor: #fff;
-  }
-  
-  corpo {
-    família de fontes: "Roboto", sans-serif;
-  }
-  
-  . recipiente {
-    largura máxima: 960px;
-    margem: 0 auto;
-    preenchimento: 30px 4%;
-    cor: #fff;
-  }
+/*=============================GERAIS===================================*/
 
-  . Mapas {
-    flex: 2;
-  }
+:root {
+  --cor-azul-bb: #AEE5E5;
+  --cor-azul-escuro: #283BE5;
+  --cor-rosa-bb: #F3C7E6;
+  --cor-amarelo: #FFEAA9;
+  --cor-rosa-escuro:#F25A70;
+  --cor-roxo-acai: #F3C7E6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/*=============================HEADER===================================*/
+
+
+header {
+  background-color: var(--cor-azul-bb);
+}
+
+.header-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.header-logo img{
+  width: 100%;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+.header-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nav-link {
+  color: black;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+.header-nav-link:hover {
+  color: white;
+  border-radius: 20px;
+}
+
+
+.nav-inicio:hover {
+  background-color: var(--cor-rosa-bb);
+
+}
+
+.nav-quem-somos:hover {
+  background-color: var(--cor-azul-escuro);
   
-   h1 principal  {
-    cor: #583493ad;
-    tamanho da fonte: 30px;
-    texto-transformação: maiúsculas;
-    peso da fonte: negrito;
-    alinhamento de texto: centro;
-    margem-fundo: 40px;
-  }
+}
+
+.nav-missao:hover {
+  background-color: var(--cor-amarelo);
   
-  h1 principal: depois {
-    conteúdo: "";
-    display: bloco;
-    largura: 40px;
-    altura: 4px;
-    plano de fundo: #583493ad;
-    margem: 14px auto;
-  }
+}
+
+.nav-produtos:hover {
+  background-color: var(--cor-rosa-bb);
   
-  @media (largura máxima: 600px) {
-    seção principal {
-      flex-direção: coluna;
-      alinhamento de texto: centro;
-      justificar-itens: centro;
-      intervalo: 20px;
-    }
-   . Mapas {
-      flex: 1;
-    }
-  }
+}
+
+/*=============================GERAL-PRODUTOS-LEONARDO===================================*/
+
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  
+}
+
+.main-imagens {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.main-text ul{
+  margin: 20px 0;
+}
+
+.main-text ul li {
+  
+  margin-left: 30px;
+  padding-top: 5px;
+  font-size: 1.1em;
+}
+
+.main-text dt {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/*=============================AÇAI===================================*/
+
+.main-acai {
+  background-color: var(--cor-roxo-acai);
+}
+
+
+/*=============================MILK-SHAKE===================================*/
+
+.main-milkshake {
+  background-color: var(--cor-amarelo);
+}
+
+/*=============================POTE-SORVETE===================================*/
+
+
+.main-pote-sorvete {
+  background-color: var(--cor-amarelo);
+}
