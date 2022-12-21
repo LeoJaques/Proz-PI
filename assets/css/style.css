@@ -1,4 +1,6 @@
    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gentium+Book+Basic:ital@0;1&family=Lobster&family=Pacifico&display=swap');
+   @import url("https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Lobster&family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,300;1,400;1,600;1,700&family=Pacifico&family=Poppins:ital,wght@0,100;0,600;1,200;1,500;1,600&family=Rancho&family=Reenie+Beanie&family=Rock+Salt&family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap");
+
 
    * {
      margin: 0;
@@ -13,10 +15,16 @@
    }
 
    :root {
-     --cor-azulclaro: #AEE5E5;
-     --cor-rosa-bb: #F3C7E6;
-     --cor-amarelo: #FFEAA9;
-     --cor-rosa-escuro: #F25A70;
+    --cor-azul-bb: #AEE5E5;
+    --cor-azulclaro: #98dfee;
+    --cor-azul-escuro: #283BE5;
+    --cor-rosa-bb: #F3C7E6;
+    --cor-amarelo: #FFEAA9;
+    --cor-amarelo-escuro: #F3DC94;
+    --cor-amarelo-intenso:#f4cd58;
+    --cor-amarelo-queimado: #736029 ;
+    --cor-rosa-escuro:#F25A70;
+    --cor-roxo-acai: #F3C7E6;
    }
 
    .color-body {
@@ -306,3 +314,343 @@
      height: 200px;
      box-shadow: 2px 1px 2px #0003;
    }
+
+   /*============================PRODUTOS-THALIA================================*/
+
+.body-produtos{
+    background-color: var(--cor-azulclaro);
+}
+
+.section-produtos h1{
+    color: var(--cor-azul-escuro);
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.section-produtos p{
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.article-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+    flex-direction: row;
+    text-align: center;
+}
+
+.article-container div{
+    margin: 30px;
+    flex: 1 1 300px;
+    width: 400px;
+}
+
+.produtos-tipos{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+.item1 {
+    background: linear-gradient(180deg,var(--cor-amarelo),var(--cor-amarelo-intenso));
+    border-radius: 20px;
+    padding-top: 20px;
+}
+.item2{
+    background: linear-gradient(180deg, var(--cor-rosa-bb),var(--cor-rosa-escuro));
+    border-radius: 20px;
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+/*===========================SORVETES-THALIA=================================*/
+
+ .sorvetes {
+    background-color: var(--cor-amarelo);
+}
+.sorvetes-título {
+    color: var(--cor-amarelo-queimado);
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.sorvetes-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: start;
+}
+.sorvetes-tipos{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+.item3{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: linear-gradient(180deg, var(--cor-rosa-bb), var(--cor-rosa-escuro));
+    border-radius: 20px;
+    width: 500px;
+}
+.item4{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: linear-gradient(180deg, var(--cor-azulclaro), var(--cor-azul-bb));
+    border-radius: 20px;
+    width: 500px;
+}
+.sorvetes-sabores, .sorvetes-cobertura, .sorvetes-acompanhamentos, .sorvetes-recheio{
+    text-align: center;   
+    font-size: 22px;
+    padding-top: 20px;
+}
+div img{
+    align-items: center;
+}
+
+li{
+    font-size: 18px;
+}
+
+/*===========================PICOLÉS-THALIA==================================*/
+
+.picoles{
+    background-color: var(--cor-rosa-bb);
+}
+
+.picoles-titulo{
+  color: var(--cor-rosa-acai);
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-size: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+.picoles-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: start;
+}
+
+.item5{
+  background: linear-gradient(180deg,var(--cor-amarelo),var(--cor-amarelo-intenso));
+    border-radius: 20px;
+}
+
+.item6{
+    background: linear-gradient(180deg, var(--cor-azulclaro), var(--cor-azul-bb));
+    border-radius: 20px;
+    width: 480px;
+}
+
+.picoles-tipos{
+  font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center;  
+}
+
+.picoles-sabores{
+  text-align: center;   
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+/*=============================GERAL-PRODUTOS-LEONARDO===================================*/
+
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  
+}
+
+.main-imagens {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.main-text ul{
+  margin: 20px 0;
+}
+
+.main-text ul li {
+  
+  margin-left: 30px;
+  padding-top: 5px;
+  font-size: 1.1em;
+}
+
+.main-text dt {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/*=============================AÇAI===================================*/
+
+.main-acai {
+  background-color: var(--cor-roxo-acai);
+}
+
+
+/*=============================MILK-SHAKE===================================*/
+
+.main-milkshake {
+  background-color: var(--cor-amarelo);
+}
+
+/*=============================POTE-SORVETE===================================*/
+
+
+.main-pote-sorvete {
+  background-color: var(--cor-amarelo);
+}
+
+
+/*================================LOCALIZAÇÃO==================================*/
+
+.localizacao {
+  margin: 120px auto;
+  width: 600px;
+  height: 400px;
+  
+  box-shadow: -2px 2px 5px black;
+}
+
+.localizacao-body{
+  background-color: var(--cor-amarelo);
+}
+
+
+/*=============================MISSAO===================================*/
+
+
+
+
+.container-missao-div{
+  max-width: 600px;
+  margin: 120px auto;
+  text-align: justify;
+  font-weight: bold;
+  background-color: rgba(211, 211, 211, 0.486);
+  padding: 20px; 
+  border-radius: 30px; 
+  font-family: sans-serif;
+ 
+}
+
+.container-missao-div p{
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+
+
+.missao{
+
+background-color: var(--cor-amarelo);
+background-image: url(../images/pngwing.com\ \(11\).png);
+
+background-repeat: no-repeat;
+
+
+}
+
+/*---------------------------------------------QUEM SOMOS----------------------------------*/
+
+
+.conheca{
+
+  color: var(--cor-rosa-escuro);
+  margin-bottom: 2rem;
+  
+  }
+  
+  .qsomos{
+    font-family:'Poppins','Lobster','Pacifico','Normal';
+    font-weight:bolder;
+    font-size: 15px;
+    line-height: 25px;
+    color:var(--cor-rosa-escuro) ;
+    height: 100vh;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: auto;
+  
+  }
+  
+  span {
+    font-size: x-large;
+  }
+  
+  .img-slide {
+    box-shadow: 2px 1px 2px #0003;
+    width: 300px;
+    height: 250px;
+    width: 100%;
+    border-radius: 40px;
+  }
+  
+  .swiper {
+    height: 500px;
+    background-color: var(--cor-rosa-bb);
+    box-shadow: 2px 1px 2px #0003;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right:20px;
+  }
+  
+  .project-text {
+    margin: 50px 40px;
+  }
+  
+  .project-text p {
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 20px;
+  }
+  
+  @media (max-width: 450px) {
+    .swiper {
+     height: 270px;
+    }
+  }
+
+  .quem-somos-body{
+    background-color: var(--cor-amarelo);
+  }
