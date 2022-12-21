@@ -1,59 +1,272 @@
-* {
-    preenchimento: 0;
-    margem: 0;
-    box-sizing: border-box;
-  }
-  
-  li {
-    tipo de estilo de lista: nenhum;
-  }
-  
-  um {
-    texto-decoração: nenhuma;
-    cor: #fff;
-  }
-  
-  corpo {
-    família de fontes: "Roboto", sans-serif;
-  }
-  
-  . recipiente {
-    largura máxima: 960px;
-    margem: 0 auto;
-    preenchimento: 30px 4%;
-    cor: #fff;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gentium+Book+Basic:ital@0;1&family=Lobster&family=Pacifico&display=swap');
 
-  . Mapas {
-    flex: 2;
-  }
-  
-   h1 principal  {
-    cor: #583493ad;
-    tamanho da fonte: 30px;
-    texto-transformação: maiúsculas;
-    peso da fonte: negrito;
-    alinhamento de texto: centro;
-    margem-fundo: 40px;
-  }
-  
-  h1 principal: depois {
-    conteúdo: "";
-    display: bloco;
-    largura: 40px;
-    altura: 4px;
-    plano de fundo: #583493ad;
-    margem: 14px auto;
-  }
-  
-  @media (largura máxima: 600px) {
-    seção principal {
-      flex-direção: coluna;
-      alinhamento de texto: centro;
-      justificar-itens: centro;
-      intervalo: 20px;
-    }
-   . Mapas {
-      flex: 1;
-    }
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0px 2%;
+}
+
+:root {
+  --cor-azulclaro: #AEE5E5;
+  --cor-rosa-bb: #F3C7E6;
+  --cor-amarelo: #FFEAA9;
+  --cor-rosa-escuro: #F25A70;
+}
+
+body {
+  background-color: var(--cor-amarelo);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  border-bottom: 10px solid black;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  background-color: var(--cor-azulclaro);
+}
+
+.logo {
+  height: 170px;
+  width: 170px;
+  margin-left: 100px;
+}
+
+main {
+
+  background-size: cover;
+}
+
+nav {
+  text-align: right;
+  margin-right: 50px;
+}
+
+.menu .main-menu {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  margin-right: 30px;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  color: black;
+}
+
+.menu .main-menu:hover {
+  background-color: #F25A70;
+  border-radius: 30px;
+  color: #000;
+}
+
+
+.sorvete {
+  font-size: 35px;
+  margin-left: 40px;
+}
+
+.section-principal {
+  background: linear-gradient(to right, #AEE5E5, #F3C7E6);
+}
+
+.div-principal {
+  background-image: url("assets/principal.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+main section h1 {
+  font-family: "lobster";
+  font-size: 35px;
+  padding: 10px;
+}
+
+main section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  text-align: justify;
+  padding: 100px;
+}
+
+.class-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.cor {
+  padding: 30px 0;
+  font-family: "lobster";
+  background-color: var(--cor-amarelo);
+}
+
+.hoje-tem {
+  font-family: "lobster";
+  font-size: 25px;
+  text-align: center;
+  padding: 50px;
+  background: var(--cor-rosa-bb);
+}
+
+.bloco-img {
+  border-radius: 30px;
+  width: 200px;
+  height: 262px;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #AEE5E5, #F3C7E6);
+  color: black;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 1em;
+  line-height: 20px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.all {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.all:nth-child(2),
+.all:nth-child(3) {
+  flex-basis: 15%;
+
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.all h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin: 20px 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+form {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin-bottom: 50px;
+}
+
+form .far {
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+form input {
+  width: 100%;
+  background: transparent;
+  color: var(--cor-rosa-escuro);
+  border: 0;
+  outline: none;
+}
+
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fa-solid {
+  font-size: 16px;
+  color: var(--cor-rosa-escuro);
+}
+
+.social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: var(--cor-rosa-escuro);
+  background: rgb(255, 234, 169);
+  background: radial-gradient(circle, rgba(255, 234, 169, 1) 34%, rgba(57, 208, 240, 1) 93%);
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: var(--cor-rosa-escuro);
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+
+.localizaçao {
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: -2px 2px 5px black;
+}
