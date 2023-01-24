@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sweet Dreams - Promoções</title>
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/css/leonardo.css">
+    <script src="../assets/js/leonardo.js" defer></script>
+</head>
+
+<body>
+  <header class="container">
+    <div class="row justify-content-center" >
+     
+        <figure class="col-8 figure-form">
+          <img class="logo-form" src="https://leojaques.github.io/Proz-PI/assets/images/logo.png" alt="Logo Sweet Dreams">
+        </figure>
+      
+
+    </div>
+    <div class="row text-center">
+      <h1>Formulário de cadastro</h1> 
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <form class="mb-3 offer-form">
+        <div class="row mb-3">
+          <label for="inputName" class="col-sm-2 col-form-label">Nome</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputName">
+            <p id="name-helper" class="helper-text">Mensagem de ajuda</p>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail">
+            <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputTel" class="col-sm-2 col-form-label">Telefone</label>
+          <div class="col-sm-10">
+            <input type="tel" class="form-control" id="inputTel" >
+            <p id="tel-helper" class="helper-text">Mensagem de ajuda</p>
+
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1" required>
+              <label class="form-check-label" for="gridCheck1">
+                Aceito receber ofertas e promoções.
+              </label>
+              
+            </div>
+          </div>
+        </div>
+        <button id="button" type="button" class="btn btn-primary" disabled>Enviar</button>
+      </form>
+
+      <div class="alert alert-danger alert-dismissible hidden-alert" role="alert">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        Preencha os campos antes de prosseguir.
+      </div>
+      <div class="alert alert-success alert-dismissible hidden-alert" role="alert">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        Cadastro realizado com sucesso!
+      </div>
+  </main>
+
+  <!--Bootstrap script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

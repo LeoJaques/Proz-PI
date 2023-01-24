@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+:root {
+    --cor-amarelo: #FFEAA9;
+    --cor-amarelo-escuro: #FFDD75;
+  }  
+
+/*=============================AÇAI===================================*/
+
+.main-acai {
+  background-color: var(--cor-amarelo);
+
+}
+
+.btn {
+  background-color: var(--cor-amarelo-escuro);
+  font-family: 'EB Garamond', serif;
+  font-size: 23px;
+}
+
+.card-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+} 
+
+.card-text {
+  font-family: 'EB Garamond', serif;
+  font-size: 23px;
+}
+
+
+/*=============================MILK-SHAKE===================================*/
+
+.main-milkshake {
+  background-color: var(--cor-amarelo);
+}
+
+.btn {
+  background-color: var(--cor-amarelo-escuro);
+  font-family: 'EB Garamond', serif;
+  font-size: 23px;
+}
+
+.card-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+} 
+
+.card-text {
+  font-family: 'EB Garamond', serif;
+  font-size: 23px;
+}
+
+/*=============================POTE-SORVETE===================================*/
+
+
+.main-pote-sorvete {
+  background-color: var(--cor-amarelo);
+}
+
+.btn {
+  background-color: var(--cor-amarelo-escuro);
+  font-family: 'EB Garamond', serif;
+  font-size: 23px;
+}
+
+.card-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+} 
+
+.card-text {
+  font-family: 'EB Garamond', serif;
+  font-size: 23px;
+}
+
+
+/*=============================CARDS===================================*/
+.card,
+.btn {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+}
+
+
+/*=============================BOOTATRAP-ALERTS===================================*/
+
+.helper-text {
+  display: none;
+  font-size: .8rem;
+  color: darkred;
+}
+
+.hidden-alert {
+  display: none;
+}

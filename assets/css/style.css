@@ -79,56 +79,140 @@ header {
   
 }
 
-/*=============================GERAL-PRODUTOS-LEONARDO===================================*/
-
-
-.main-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 20px;
-  
+.nav-localizacao:hover {
+  background-color: var(--cor-azul-escuro);
 }
 
-.main-imagens {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px 0;
+
+
+
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #AEE5E5, #F3C7E6);
+  color: black;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 1em;
+  line-height: 20px;
 }
 
-.main-text ul{
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.all {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.all:nth-child(2),
+.all:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.all h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
   margin: 20px 0;
 }
 
-.main-text ul li {
-  
-  margin-left: 30px;
-  padding-top: 5px;
-  font-size: 1.1em;
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
 }
 
-.main-text dt {
-  font-size: 1.2em;
-  font-weight: bold;
+ul li a {
+  text-decoration: none;
+  color: black;
 }
 
-/*=============================AÇAI===================================*/
-
-.main-acai {
-  background-color: var(--cor-roxo-acai);
+form {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin-bottom: 50px;
 }
 
-
-/*=============================MILK-SHAKE===================================*/
-
-.main-milkshake {
-  background-color: var(--cor-amarelo);
+form .far {
+  font-size: 10px;
+  margin-right: 10px;
 }
 
-/*=============================POTE-SORVETE===================================*/
+form input {
+  width: 100%;
+  background: transparent;
+  color: var(--cor-rosa-escuro);
+  border: 0;
+  outline: none;
+}
 
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
 
-.main-pote-sorvete {
-  background-color: var(--cor-amarelo);
+form button .fa-solid {
+  font-size: 16px;
+  color: var(--cor-rosa-escuro);
+}
+
+.social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: var(--cor-rosa-escuro);
+  background: rgb(255, 234, 169);
+  background: radial-gradient(circle, rgba(255, 234, 169, 1) 34%, rgba(57, 208, 240, 1) 93%);
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: var(--cor-rosa-escuro);
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+
+.logo-footer {
+  width: 200px;
+}
+
+.logo-img-caixa {
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 1px 2px #0003;
 }

@@ -5,9 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Milk-Shake</title>
+  <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
+    <!--BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!--MY-CSS-->
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/leonardo.css">
+  <!--MY-JS-->
+  <script src="../assets/js/leonardo.js" defer></script>
 </head>
-<body>
+<body class="main-milkshake">
   <header>
     <div class="header-container">
       <div class="header-logo">
@@ -23,35 +32,48 @@
       </nav>
     </div>
   </header>
-  <main class="main-milkshake">
-    <div class="main-container">
-      <div class="main-imagens">
-        <img src="../assets/images/milkshake.png" alt="Milk-Shake">
-      </div>
-      <div class="main-text">
-        <dl>
-          <dt>
-            Sabores:
-          </dt>
-          <ul>
-            <li>Baunilha</li>
-            <li>chocolate</li>
-            <li>Choco menta</li>
-            <li>Coco</li>
-            <li>Leite Ninho</li>
-            <li>Negresco</li>
-            <li>Óreo</li>
-            <li>Uva</li>
-            <li>Chocolate com Banana</li>
-            <li>Napolitano</li>
-            <li>Morango</li>
-            <li>Ovomaltine</li>
-            <li>Maracujá</li>
-            <li>Duo chocolate</li>
-
-          </ul>
-      </div>
-    </div>
+  <main class="p-5">
+    <div class="container ">
+      <div class="row justify-content-center g-3 ">
+        <div class="col-12 col-lg-4 col-md-6 ">
+          <div class="card p-2">
+            <figure class="figure-card mx-auto">
+            <img class="card-img-top card1" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Clássico</h5>
+              <p class="card-text">Uma sobremesa deliciosa e refrescante, feita com sorvete e leite. Ideal para dias quentes, com várias opções de sabores.</p>
+              <a href="#" class="btn">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 ">
+          <div class="card p-2">
+            <figure class="figure-card mx-auto">
+            <img class="card-img-top card2" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Especial</h5>
+              <p class="card-text">uma deliciosa combinação de sorvete e leite batidos juntos, com adições como frutas, nozes, chocolate e muito mais.</p>
+              <a href="#" class="btn">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card p-2">
+            <figure class="figure-card mx-auto">
+            <img class="card-img-top card3" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Combos</h5>
+              <p class="card-text">Está esperando o que? Se um já é em bom então pede dois, chame um amigo e vem conferir. Oferta por tempo limitado</p>
+              <a href="#" class="btn">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        
+      </div> <!--/row-->
+    </div> <!--/container-->
   </main>
   <footer>
     <h3>Contatos:</h3>
