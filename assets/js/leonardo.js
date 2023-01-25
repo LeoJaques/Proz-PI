@@ -51,7 +51,7 @@ if (verifyPage('milkshake.html')) {
     const cardsFigure =  document.querySelectorAll(".figure-card")
     const cardsImg = document.querySelectorAll(".card-img-top")
     const cardsTitle = document.querySelectorAll('.card-title')
-    const bntCards = document.querySelectorAll('a.btn')
+    const bntCards = document.querySelectorAll('.btn')
 
 
     for (let i = 0; i < cardsFigure.length; i++) {
@@ -116,7 +116,7 @@ if (window.location.href.includes('form.html')) {
       inputName.style.border = '1px solid red'
       helperNomeText.innerText = "Insira seu nome."
       helperNomeText.style.display = 'block'
-
+      button.disabled = true
     }
   });
 
@@ -133,6 +133,7 @@ if (window.location.href.includes('form.html')) {
       emailInput.style.border = '1px solid red'
       helperEmailText.innerText = 'Por favor insirar um e-mail valido'
       helperEmailText.style.display = 'block'
+      button.disabled = true
     }
   })
   
@@ -149,7 +150,7 @@ if (window.location.href.includes('form.html')) {
       telInput.style.border = '1px solid red'
       helperTelText.innerText = 'Por favor insirar um telefone válido - (XX) XXXXX-XXXX'
       helperTelText.style.display = 'block'
-  
+      button.disabled = true
     }
   
   })

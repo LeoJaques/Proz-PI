@@ -13,7 +13,7 @@
   <!--MY-CSS-->
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/leonardo.css">
-    <!--MY-JS-->
+  <!--MY-JS-->
   <script src="../assets/js/leonardo.js" defer></script>
 </head>
 
@@ -41,42 +41,169 @@
         <div class="col-12 col-lg-4 col-md-6 ">
           <div class="card p-2">
             <figure class="figure-card mx-auto">
-            <img class="card-img-top card1" alt="Polpa de açaí congelada">
+              <img class="card-img-top card1" alt="Polpa de açaí congelada">
             </figure>
             <div class="card-body">
               <h5 class="card-title">Polpa</h5>
-              <p class="card-text">Polpa de açaí congelada é saudável e prática, perfeita para smoothies e bowls. Rico em antioxidantes e fibras.</p>
-              <a href="#" class="btn">Ver mais</a>
+              <p class="card-text">Polpa de açaí congelada é saudável e prática, perfeita para smoothies e bowls. Rico
+                em antioxidantes e fibras.</p>
+              <!--button-modal-polpa-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#polpa-modal">Ver mais</button>
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-md-6 ">
           <div class="card p-2">
             <figure class="figure-card mx-auto">
-            <img class="card-img-top card2" alt="...">
+              <img class="card-img-top card2" alt="...">
             </figure>
             <div class="card-body">
               <h5 class="card-title">Copo</h5>
-              <p class="card-text">Copo de açaí frozen é uma deliciosa opção saudável e refrescante, perfeita para dias quentes.</p>
-              <a href="#" class="btn">Ver mais</a>
+              <p class="card-text">Copo de açaí frozen é uma deliciosa opção saudável e refrescante, perfeita para dias
+                quentes.</p>
+              <!--button-modal-copo-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#copo-modal">Ver mais</button>
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-md-6">
           <div class="card p-2">
             <figure class="figure-card mx-auto">
-            <img class="card-img-top card3" alt="...">
+              <img class="card-img-top card3" alt="...">
             </figure>
             <div class="card-body">
               <h5 class="card-title">Barca</h5>
-              <p class="card-text">Barba de açaí frozen com acompanhamentos é uma deliciosa opção saudável e divertida para dividir com amigos.</p>
-              <a href="#" class="btn">Ver mais</a>
+              <p class="card-text">Barba de açaí frozen com acompanhamentos é uma deliciosa opção saudável e divertida
+                para dividir com amigos.</p>
+              <!--button-modal-barca-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#barca-modal">Ver mais</button>
             </div>
           </div>
         </div>
-        
+
       </div> <!--/row-->
     </div> <!--/container-->
+
+    <!--POLPA-MODAL-->
+    <div class="modal fade" id="polpa-modal" tabindex="-1" aria-labelledby="polpaModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="CopoModalLabel">Polpa - Opções</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <dl class="tamanhos">
+              <dt>
+                Tamanhos
+              </dt>
+              <ul>
+                <li>1kg</li>
+                <li>500g</li>
+              </ul>
+            </dl>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!--COPO-MODAL-->
+    <div class="modal fade" id="copo-modal" tabindex="-1" aria-labelledby="copoModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="CopoModalLabel">Copo - Opções</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <dl class="tamanhos">
+              <dt>
+                Tamanhos:
+              </dt>
+              <ul class="list-main">
+                <li class="li-main">200ml</li>
+                <li class="li-main">300ml</li>
+                <li class="li-main">500ml</li>
+                <li class="li-main">1L</li>
+              </ul>
+            </dl>
+
+            <dl class="acompanhemeto">
+              <dt>
+                Acompanhamento &#40;até 5&#41;:
+              </dt>
+              <ul>
+                <li class="li-main">Granola</li>
+                <li class="li-main">Leite Condensado</li>
+                <li class="li-main">Banana</li>
+                <li class="li-main">Morango</li>
+                <li class="li-main">Paçoca</li>
+                <li class="li-main">Confete</li>
+                <li class="li-main">Leite em pó</li>
+                <li class="li-main">Chocobow</li>
+                <li class="li-main">Jujuba</li>
+                <li class="li-main">Nutella</li>
+              </ul>
+            </dl>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <!--BARCA-MODAL-->
+    <div class="modal fade" id="barca-modal" tabindex="-1" aria-labelledby="barcaModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="CopoModalLabel">Barca - Opções</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <dl class="tamanhos">
+              <dt>
+                Tamanhos:
+              </dt>
+              <ul class="list-main">
+                <li class="li-main">1L</li>
+                <li class="li-main">1.5L</li>
+                <li class="li-main">2L</li>
+                <li class="li-main">2.5L</li>
+              </ul>
+            </dl>
+
+            <dl class="acompanhemeto">
+              <dt>
+                Acompanhamento &#40;até 8&#41;:
+              </dt>
+              <ul>
+                <li class="li-main">Granola</li>
+                <li class="li-main">Leite Condensado</li>
+                <li class="li-main">Banana</li>
+                <li class="li-main">Morango</li>
+                <li class="li-main">Paçoca</li>
+                <li class="li-main">Confete</li>
+                <li class="li-main">Leite em pó</li>
+                <li class="li-main">Chocobow</li>
+                <li class="li-main">Jujuba</li>
+                <li class="li-main">Nutella</li>
+              </ul>
+            </dl>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+
   </main>
 
   <footer>

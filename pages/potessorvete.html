@@ -45,7 +45,8 @@
             <div class="card-body">
               <h5 class="card-title">Clássico</h5>
               <p class="card-text">Sorvete é uma sobremesa gelada feita com leite, creme e açúcar, com diversas opções de sabores e adições.</p>
-              <a href="#" class="btn">Ver mais</a>
+              <!--button-modal-classic-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#classic-modal">Ver mais</button>
             </div>
           </div>
         </div>
@@ -57,7 +58,8 @@
             <div class="card-body">
               <h5 class="card-title">Especial</h5>
               <p class="card-text">Sorvetes especiais pela variedade de sabores e ingredientes, proporcionando uma experiência única de degustação.</p>
-              <a href="#" class="btn">Ver mais</a>
+              <!--button-modal-special-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#special-modal">Ver mais</button>
             </div>
           </div>
         </div>
@@ -69,7 +71,8 @@
             <div class="card-body">
               <h5 class="card-title">Artesanal</h5>
               <p class="card-text">Sorvetes artesanais são feitos com ingredientes frescos e naturais, sem conservantes ou corantes artificiais.</p>
-              <a href="#" class="btn">Ver mais</a>
+              <!--button-modal-artesanal-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#artesanal-modal">Ver mais</button>
             </div>
           </div>
         </div>
@@ -97,6 +100,111 @@
       <img src="../assets/icons/tik-tok.png" width="20px" alt="tik-tok">
     </a>
   </footer>
+
+
+  <!--CLASSIC-MODAL-->
+  <div class="modal fade" id="classic-modal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="poteClassicModalLabel">Pote de Sorvete Clássico - Opções</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <dl>
+            <dl>
+              <dt>
+                Sabores:
+              </dt>
+              <ul>
+                <li>Baunilha</li>
+                <li>chocolate</li>
+                <li>Choco menta</li>
+                <li>Coco</li>
+                <li>Uva</li>
+                <li>Chocolate com Banana</li>
+                <li>Napolitano</li>
+                <li>Morango</li>
+                <li>Maracujá</li>
+                <li>Duo chocolate</li>
+    
+              </ul>
+          </dl>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!--SPECIAL-MODAL-->
+  <div class="modal fade" id="special-modal" tabindex="-1" aria-labelledby="specialModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="poteSpecialModalLabel">Pote de Sorvete Especial - Opções</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <dl>
+            <dt>
+              Sabores:
+            </dt>
+            <ul>
+              <li>Häagen-Dazs</li>
+              <li>Leite Ninho</li>
+              <li>Negresco</li>
+              <li>Óreo</li>
+              <li>Ovomaltine</li>
+              <li>Ferrero Rocher</li>
+              <li>Milka</li>
+              <li>Nutella</li>
+            </ul>
+          </dl>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!--ARTESANAL-MODAL-->
+  <div class="modal fade" id="artesanal-modal" tabindex="-1" aria-labelledby="artesanalModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="artesanalModalLabel">Artesanal - Opções</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <dl>
+            <dt>
+              Sorvete da casa na sua casa
+            </dt>
+            <ul>
+              <li>Chocolate</li>
+              <li>Cupuaçu</li>
+              <li>Maracujá</li>
+              <li>Nutella</li>
+              <li>Sonho de valsa</li>
+            </ul>
+            
+          </dl>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <!--BOOTSTRAP SCRIPT-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -7,89 +7,56 @@
     --cor-amarelo-escuro: #FFDD75;
   }  
 
-/*=============================AÇAI===================================*/
+/*=============================STYLE===================================*/
 
-.main-acai {
-  background-color: var(--cor-amarelo);
-
-}
-
-.btn {
-  background-color: var(--cor-amarelo-escuro);
-  font-family: 'EB Garamond', serif;
-  font-size: 23px;
-}
-
-.card-title {
-  font-family: 'EB Garamond', serif;
-  font-size: 30px;
-} 
-
-.card-text {
-  font-family: 'EB Garamond', serif;
-  font-size: 23px;
-}
-
-
-/*=============================MILK-SHAKE===================================*/
-
-.main-milkshake {
-  background-color: var(--cor-amarelo);
-}
-
-.btn {
-  background-color: var(--cor-amarelo-escuro);
-  font-family: 'EB Garamond', serif;
-  font-size: 23px;
-}
-
-.card-title {
-  font-family: 'EB Garamond', serif;
-  font-size: 30px;
-} 
-
-.card-text {
-  font-family: 'EB Garamond', serif;
-  font-size: 23px;
-}
-
-/*=============================POTE-SORVETE===================================*/
-
-
+.main-acai,
+.main-milkshake,
 .main-pote-sorvete {
   background-color: var(--cor-amarelo);
+
 }
 
 .btn {
   background-color: var(--cor-amarelo-escuro);
   font-family: 'EB Garamond', serif;
-  font-size: 23px;
+  font-size: 1.8rem;
+  color: black;
 }
 
 .card-title {
   font-family: 'EB Garamond', serif;
-  font-size: 30px;
+  font-size: 2rem;
 } 
 
 .card-text {
   font-family: 'EB Garamond', serif;
-  font-size: 23px;
+  font-size: 1.6rem;
+  height: 250px;
+  text-indent: 10px;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  justify-content: center;
 }
+
+
 
 
 /*=============================CARDS===================================*/
 .card,
 .btn {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+
 }
 
+.btn:hover {
+  background-color: var(--cor-amarelo);
+}
 
 /*=============================BOOTATRAP-ALERTS===================================*/
 
 .helper-text {
   display: none;
-  font-size: .8rem;
-  color: darkred;
 }
 
 .hidden-alert {
