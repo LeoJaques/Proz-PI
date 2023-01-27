@@ -7,10 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/463b6a11a4.js"></script>
   <title>Sweet Dreams</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/menu principal.css">
+  <link rel="stylesheet" href="assets/css/vanillatilt.css">
+  <link rel="stylesheet" href="assets/css/banner.css">
+  <link rel="stylesheet" href="assets/css/header-footer.css">
 
 </head>
-
 
 <body class="color-body">
   <header>
@@ -24,45 +27,40 @@
           <li><a href="#" class="header-nav-link nav-quem-somos">Quem Somos</a></li>
           <li><a href="#" class="header-nav-link nav-missao">Missão</a></li>
           <li><a href="#" class="header-nav-link nav-produtos">Produtos</a></li>
-          <li><a href="#" class="header-nav-link nav-localizacao">Localização</a></li>
+          <li><a href="#" class="header-nav-link nav-localização" id="button">Localização</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
   <main class="section-principal">
     <section class="container">
-      <div class="div-principal">
-        <h1>O Sorvete dos Seus Sonhos!</h1>
-        <p> Com receitas exclusivas, nossos produtos são feitos com matérias primas de primeira e todos naturais, zero
-          conservantes. É pensando em você que atualmente temos Produtos perfeito e de qualidades.
-        </p>
+      <div class="div-principal" id="img-fundo">
+        <div>
+          <h1>O Sorvete dos Seus Sonhos!</h1>
+          <p> Com receitas exclusivas, nossos produtos são feitos com matérias primas de primeira e todos naturais, zero
+            conservantes. É pensando em você que atualmente temos Produtos de qualidades.
+          </p>
+          <h2>Aqui Tem!</h2>
+        </div>
       </div>
     </section>
   </main>
   <div class="hoje-tem">
-    <h1>Hoje Tem!</h1>
+    <h1>Aqui Tem!</h1>
   </div>
   <section class="cor">
-    <section class="container-geral">
-      <div class="class-img">
-        <article class="bloco">
-          <img src="assets/images/primeira foto.jpg" class="bloco-img" alt="primeira">
-          <p>Qualidades</p>
-        </article>
-        <article class="bloco">
-          <img src="assets/images/segunda foto.jpg" class="bloco-img" alt="segunda">
-          <p>Variedades</p>
-        </article>
-        <article class="bloco">
-          <img src="assets/images/terceira foto.jpg" class="bloco-img" alt="terceira">
-          <div class="paragrafo">
-            <p>Melhor Preço</p>
-          </div>
-
-        </article>
-      </div>
-    </section>
+    <div class="card">
+      <img src="assets/images/primeira foto.jpg" class="bloco-img" alt="primeira">
+      <button class="bnt">Variedades</button>
+    </div>
+    <div class="card">
+      <img src="assets/images/segunda foto.jpg" class="bloco-img" alt="segunda">
+      <button class="bnt">Qualidade</button>
+    </div>
+    <div class="card">
+      <img src="assets/images/terceira foto.jpg" class="bloco-img" alt="terceira">
+      <button class="bnt">Melhor Preço</button>
+    </div>
   </section>
   <footer>
     <div class="row">
@@ -87,7 +85,7 @@
           <li><a href="">Quem Somos</a></li>
           <li><a href="">Missão</a></li>
           <li><a href="">Produtos</a></li>
-          <li><a href="">contatos</a></li>
+          <li class="trabalheconosco"><a href=""><b>Trabalhe Conosco</b></a></li>
         </ul>
       </div>
 
@@ -112,5 +110,8 @@
     <hr>
     <p class="copyright">curso de programação 2022-all Rights Reserved</p>
   </footer>
+  <script src="assets/js/banner.js" defer></script>
+  <script src="assets/js/vanillatilt.js"></script>
 </body>
+
 </html>
