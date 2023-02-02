@@ -49,6 +49,7 @@ header .header-menu a:hover {
   line-height: 60px;
   padding-left: 25px;
   padding-right: 25px;
+  transition: .5s;
 }
 
 a {
@@ -59,17 +60,6 @@ a {
 
 }
 
-#button {
-  display: inline-block;
-  background-color: var(--cor-rosa-escuro);
-  height: 60px;
-  line-height: 60px;
-  padding-left: 25px;
-  padding-right: 25px;
-  box-shadow: 5px 5px 0px black;
-  border-radius: 30px;
-
-}
 
 
   /*----------------------------------------Footer------------------------------------------------*/

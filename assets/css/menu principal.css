@@ -6,11 +6,7 @@
      box-sizing: border-box;
    }
 
-   /*.container-geral {
-     max-width: 960px;
-     margin: 0 auto;
-     padding: 0px 2%;
-   }*/
+
 
    :root {
      --cor-azulclaro: #AEE5E5;
@@ -46,14 +42,13 @@
      margin-right: 50px;
    }
 
-   .hoje-tem {
+   .aqui-tem {
      font-family: "lobster";
-     font-size: 25px;
+     font-size: 2.0rem;
      text-align: center;
      padding: 50px;
      background-color: var(--cor-azul---);
    }
-
 
    .sorvete {
      font-size: 35px;
@@ -76,11 +71,12 @@
      padding: 70px;
    }
 
+
    main section h1 {
      font-family: "lobster";
-     font-size: 55px;
+     font-size: 70px;
      padding: 30px;
-     text-align: center
+     text-align: center;
    }
 
    main section p {
@@ -104,7 +100,7 @@
      align-items: center;
      width: 100%;
      min-width: 100vh;
-     flex-wrap: wrap
+     flex-wrap: wrap;
    }
 
    .card {
@@ -133,14 +129,3 @@
      background-color: var(--cor-rosa-bb);
    }
 
-  /* .card:nth-child(1) {
-     background: #30bbf1;
-   }
-
-   .card:nth-child(2) {
-     background: #30bbf1;
-   }
-
-   .card:nth-child(3) {
-     background: #30bbf1;
-   }
