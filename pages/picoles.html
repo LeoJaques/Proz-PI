@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/picoles.css">
+  <link rel="stylesheet" href="/assets/css/header-footer.css">
   <script src="/assets/scripts/picoles.js" defer></script>
   <style>
     .img {
@@ -48,7 +49,8 @@
             <div class="card-body">
               <h2 class="card-title">Picolés Tradicionais</h2>
               <p class="card-text">Os picolés à base de leite ou  à base de água são ideais para quem busca maior cremosidade e uma sensação de sobremesa que derrete na boca, trazendo uma sensação mais refrescante para quem gosta de sentir que está mordendo uma fruta fresquinha. .</p>
-              <a href="#" class="btn btn-primary">Faça seu pedido</a>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#classic-modal">Ver mais</button>
+              
             </div>
           </div>
         </div>
@@ -60,7 +62,7 @@
             <div class="card-body">
               <h2 class="card-title">Skimó</h2>
               <p class="card-text">É conhecido pela crocante casquinha de chocolate ao leite que envolve um picolé saboroso. </p>
-              <a href="#" class="btn btn-primary">Faça seu pedido</a>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#skimo-modal">Ver mais</button>
             </div>
           </div>
         </div>
@@ -72,10 +74,12 @@
             <div class="card-body">
               <h2 class="card-title">Paleta Mexicana</h2>
               <p class="card-text">Paletas Mexicanas são uma classificação para os picolés de maior tamanho que os tradicionais.Cada uma delas tem mais de 100 gramas e são produzidas com um percentual bem mais alto de frutas. Além disso, o sabor da fruta é marcante. É bem maior que um picolé tradicional. Geralmente possuem recheio.</p>
-              <a href="#" class="btn btn-primary">Faça seu pedido</a>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#paleta-modal">Ver mais</button>
             </div>
           </div>
         </div>
+      </div>
+    </div>
       </div>
     </div> 
 
@@ -102,7 +106,7 @@
             <li><a href="">Quem Somos</a></li>
             <li><a href="">Missão</a></li>
             <li><a href="">Produtos</a></li>
-            <li class="trabalheconosco"><a href=""><b>Trabalhe Conosco</b></a></li>
+            <li class="trabalheconosco"><a href="formulario.html"><b>Trabalhe Conosco</b></a></li>
           </ul>
         </div>
   
@@ -126,7 +130,112 @@
       </div>
       <hr>
       <p class="copyright">curso de programação 2022-all Rights Reserved</p>
-    </footer>    
+    </footer> 
+
+  <div class="modal fade" id="classic-modal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="TradicionaisClassicModalLabel">Tradicionais - Opções</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <dl>
+            <dl>
+              <dt>
+                Sabores:
+              </dt>
+              <ul>
+                <li>Abacaxi</li>
+                <li>Abacaxi com Hortelã</li>
+                <li>Acerola</li>
+                <li>Goiaba</li>
+                <li>Graviola</li>
+                <li>Groselha</li>
+                <li>Jabuticaba</li>
+                <li>Kiwi</li>
+                <li>Limão</li>
+                <li>Manga</li>
+                <li>Maracujá</li>
+                <li>Melancia</li>
+                <li>Pinta Língua</li>
+                <li>Tangerina</li>
+                <li>Uva</li>
+                <li>Abacaxi Suiço</li>
+                <li>Amendoim</li>
+                <li>Açaí</li>
+                <li>Banana</li>
+              </ul>
+          </dl>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>   
+
+  <div class="modal fade" id="skimo-modal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SkimóClassicModalLabel">Skimó - Opções</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <dl>
+            <dl>
+              <dt>
+                Sabores:
+              </dt>
+              <ul>
+                <li>Choco Mais</li>
+                <li>Skicoco</li>
+                <li>Skiflocos</li>
+                <li>Skimó</li>
+                <li>Skimorango</li>
+                <li>Skimaracujá Chocolate Meio Amargo</li>
+                <li>Skimaracujá Chocolate Branco</li>
+              </ul>
+          </dl>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>  
+      
+  <div class="modal fade" id="paleta-modal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="PaletaMexicanaClassicModalLabel">Paleta Mexicana - Opções</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <dl>
+            <dl>
+              <dt>
+                Sabores:
+              </dt>
+              <ul>
+                <li>Doce De Leite</li>
+                <li>Morango Com Leite Condensado</li>
+                <li>Coco E Brigadeiro Cremoso</li>
+                <li>Brigadeiro</li>
+                <li>Maracujá Com Leite Condensado</li>
+                <li>Brownie Com Doce De Leite</li>
+                <li>Marshmallow Com Baunilha</li>
+              </ul>
+          </dl>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
 
     <!--BOOTSTRAP SCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
