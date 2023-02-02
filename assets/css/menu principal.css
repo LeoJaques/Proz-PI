@@ -1,4 +1,4 @@
-   @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gentium+Book+Basic:ital@0;1&family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
 
    * {
      margin: 0;
@@ -43,7 +43,7 @@
    }
 
    .aqui-tem {
-     font-family: "lobster";
+     font-family: 'EB Garamond', serif;
      font-size: 2.0rem;
      text-align: center;
      padding: 50px;
@@ -73,14 +73,14 @@
 
 
    main section h1 {
-     font-family: "lobster";
+     font-family: 'EB Garamond', serif;
      font-size: 70px;
      padding: 30px;
      text-align: center;
    }
 
    main section p {
-     font-family: 'Poppins', sans-serif;
+    font-family: 'EB Garamond', serif;
      font-size: 30px;
      text-align: justify;
      text-indent: 20px;
