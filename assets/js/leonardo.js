@@ -55,7 +55,6 @@ if (verifyPage('milkshake.html')) {
 
 
     for (let i = 0; i < cardsFigure.length; i++) {
-      cardsFigure[i].style.width = "200px",
       cardsFigure[i].style.height = "250px"
       cardsImg[i].style.width = "100%"
       cardsImg[i].style.height = "100%"
