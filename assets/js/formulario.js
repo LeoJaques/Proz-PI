@@ -3,6 +3,7 @@ const form = document.getElementById('form');
 const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+const  ExpRegTel = /^[0-9]{11}$/;
 
 
 
@@ -32,7 +33,7 @@ function nameValidate() {
     inputsCorretos.username = false;
   } else {
     removeError(0);
-  inputsCorretos.username = true;
+    inputsCorretos.username = true;
   }
 }
 
@@ -40,7 +41,7 @@ function sobrenomeValidate() {
   console.log(campos[1].value.length);
   if (campos[1].value.length < 7) {
     setError(1);
-    inputsCorretos.sobrenome = false ;
+    inputsCorretos.sobrenome = false;
   } else {
     removeError(1);
     inputsCorretos.sobrenome = true
@@ -50,21 +51,20 @@ function sobrenomeValidate() {
 function emailValidate() {
   if (!emailRegex.test(campos[2].value)) {
     setError(2);
-     inputsCorretos.email = false ;
+    inputsCorretos.email = false;
   } else {
     removeError(2);
-     inputsCorretos.email = true 
+    inputsCorretos.email = true
   }
 }
 
 function telefoneValidate() {
-  console.log(campos[3].value.length);
-  if (campos[3].value.length < 7) {
+  if (!ExpRegTel.test(campos[3].value)) {
     setError(3);
-     inputsCorretos.telefone = false ;
+    inputsCorretos.telefone = false;
   } else {
     removeError(3);
-     inputsCorretos.telefone = true
+    inputsCorretos.telefone = true
   }
 }
 
@@ -76,12 +76,12 @@ let inputsCorretos = {
   telefone: false,
 }
 bntEnviar.addEventListener("click", enviar)
+
 function enviar(event) {
-  if(inputsCorretos.username == false || inputsCorretos.sobrenome == false || inputsCorretos.email == false ||  inputsCorretos.telefone == false){
-  event.preventDefault() ;
-  alert("Preencha todas as informações")
-  }else{
-  alert("Formulário enviado")
+  if (inputsCorretos.username == false || inputsCorretos.sobrenome == false || inputsCorretos.email == false || inputsCorretos.telefone == false) {
+    event.preventDefault();
+    alert("Preencha todas as informações")
+  } else {
+    alert("Formulário enviado")
   }
 }
-
