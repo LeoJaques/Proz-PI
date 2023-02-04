@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="/assets/css/sorvetes.css">
   <link rel="stylesheet" href="/assets/css/header-footer.css">
   <script src="/assets/scripts/sorvetes.js" defer></script>
+<link rel="stylesheet" href="/assets/css/sorvetes.css">
+<link rel="stylesheet" href="/assets/css/header-footer.css">
    <style>
         .img {
           height: 320px;
@@ -31,7 +33,7 @@
           <li><a href="#" class="header-nav-link nav-quem-somos">Quem Somos</a></li>
           <li><a href="#" class="header-nav-link nav-missao">Missão</a></li>
           <li><a href="#" class="header-nav-link nav-produtos">Produtos</a></li>
-          <li><a href="#" class="header-nav-link nav-localização" id="button">Localização</a></li>
+          <li><a href="#" class="header-nav-link nav-localização" >Localização</a></li>
         </ul>
       </nav>
     </div>
@@ -46,9 +48,9 @@
             <img class="card-img-top Sundae" src="/assets/images/sundae.png" width="400px" alt="...">
           </figure>
           <div class="card-body">
-            <h2 class="card-title1">Sundae</h2>
-            <p class="card-text1">Consiste de bolas de sorvete cobertas com molho ou xarope, como chocolate, caramelo ou morango, podendo, ainda, receber cobertura de amendoim ou castanha, cerejas, entre outras.</p>
-            <a href="#" class="btn btn-primary">Ver Mais</a>
+            <h2 class="card-title">Sundae</h2>
+            <p class="card-text">Consiste de bolas de sorvete cobertas com molho ou xarope, como chocolate, caramelo ou morango, podendo, ainda, receber cobertura de amendoim ou castanha, cerejas, entre outras.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Sundae-modal">Ver mais</button>
           </div>
         </div>
       </div>
@@ -61,7 +63,7 @@
             <h2 class="card-title">Cestinha</h2>
             <p class="card-text">Ideal para servir sorvete ou açaí, deixando mais bonito e fácil de consumir do que no tradicional cone. Depois de colocar o sorvete na cestinha, pode ser acrescentado pazinhas para consumir o sorvete e decorar com os mais diversos confeitos, confetes, balinhas, calda para sorvete, frutas, e o que mais sua imaginação permitir.
             </p>
-            <a href="#" class="btn btn-primary">Ver Mais</a>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cestinha-modal">Ver mais</button>
           </div>
         </div>
       </div>
@@ -72,9 +74,8 @@
           </figure>
           <div class="card-body">
             <h2 class="card-title">Casquinha Simples ou Recheada</h2>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Ver Mais</a>
+            <p class="card-text">Massa quebradiça em forma de cone, geralmente feita de uma bolacha de textura semelhante a um waffle, feita para que o sorvete possa ser carregado e comido sem tigela ou colher.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Casquinha-modal">Ver mais</button>>
           </div>
         </div>
       </div>
@@ -86,7 +87,7 @@
           <div class="card-body">
             <h2 class="card-title">Banana Split</h2>
             <p class="card-text">Sobremesa servida à base de sorvete e banana, é servida numa travessa em forma de barco, quando a banana é cortada ao meio, longitudinalmente, e colocada na travessa.</p>
-            <a href="#" class="btn btn-primary">Ver Mais</a>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#banana-modal">Ver mais</button>
           </div>
         </div>
       </div>
@@ -141,7 +142,179 @@
     </div>
     <hr>
     <p class="copyright">curso de programação 2022-all Rights Reserved</p>
-  </footer>    
+  </footer>
+  
+  <div class="modal fade" id="Sundae-modal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SundaeClassicModalLabel">Sundae - Opções</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <dl>
+              <dt>
+                Sabores de Sorvetes:
+              </dt>
+              <ul>
+                <li>Baunilha</li>
+                <LI>Chocolate</LI>
+                <LI>Mista</LI>
+              </ul>
+              <dt>
+                Cobertura:
+              </dt>
+              <ul>
+                <li>Chocolate</li>
+                <li>Morango</li>
+                <li>Doce De Leite</li>
+              </ul>
+              <dt>
+                Acompanhamentos:
+              </dt>
+              <ul>
+                <li>Palitos De Chocolate</li>
+                <li>Amendoim</li>
+                <li>Confetes</li>
+              </ul>
+          </dl>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div> 
+
+  <div class="modal fade" id="cestinha-modal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="cestinhaClassicModalLabel">Cestinha - Opções</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <dl>
+              <dt>
+                Sabores de Sorvetes:
+              </dt>
+              <ul>
+                <li>Baunilha</li>
+                <LI>Chocolate</LI>
+                <LI>Mista</LI>
+              </ul>
+              <dt>
+                Cobertura:
+              </dt>
+              <ul>
+                <li>Chocolate</li>
+                <li>Morango</li>
+                <li>Doce De Leite</li>
+              </ul>
+              <dt>
+                Recheios Da Cestinha:
+              </dt>
+              <ul>
+                <li>Chocolate</li>
+                <li>Nutella</li>
+                <li>Doce De Leite</li>
+              </ul>
+          </dl>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div> 
+
+  <div class="modal fade" id="Casquinha-modal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="casquinhaClassicModalLabel">Casquinha - Opções</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <dl>
+              <dt>
+                Sabores de Sorvetes:
+              </dt>
+              <ul>
+                <li>Baunilha</li>
+                <LI>Chocolate</LI>
+                <LI>Mista</LI>
+              </ul>
+              <dt>
+                Cobertura:
+              </dt>
+              <ul>
+                <li>Chocolate</li>
+                <li>Morango</li>
+                <li>Doce De Leite</li>
+              </ul>
+              <dt>
+                Recheios Da Casquinha:
+              </dt>
+              <ul>
+                <li>Chocolate</li>
+                <li>Nutella</li>
+                <li>Doce De Leite</li>
+              </ul>
+          </dl>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div> 
+
+  <div class="modal fade" id="banana-modal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="bananaClassicModalLabel">Banana Split - Opções</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <dl>
+              <dt>
+                Sabores de Sorvetes:
+              </dt>
+              <ul>
+                <li>Baunilha</li>
+                <LI>Chocolate</LI>
+                <LI>Mista</LI>
+              </ul>
+              <dt>
+                Cobertura:
+              </dt>
+              <ul>
+                <li>Chocolate</li>
+                <li>Morango</li>
+                <li>Doce De Leite</li>
+              </ul>
+              <dt>
+                Acompanhamentos:
+              </dt>
+              <ul>
+                <li>Banana</li>
+                <li>Cereja</li>
+                <li>Amendoim</li>
+                <li>Paçoca</li>
+                <li>Confetes</li>
+                <li>Calda De Chocolate Quente</li>
+                <li>Chantilly</li>
+              </ul>
+          </dl>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div> 
 
   <!--BOOTSTRAP SCRIPT-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

@@ -12,6 +12,7 @@
     --cor-amarelo: #FFEAA9;
     --cor-rosa-escuro: #F25A70;
     --cor-azul---:#98dfee;
+    --cor-amarelo-escuro: #FFDD75;
   }
 
  body{
@@ -38,7 +39,45 @@
 .card-text {
     font-family: 'EB Garamond', serif;
     font-size: 18px;
-    text-align: center;  
+    text-align: center; 
+    height: 250px;
+}
+
+.figure-card {
+  height: 260px;
+}
+
+.card-img-top  {
+  width: 90%;
+}
+
+.card{
+  height: 700px;
+}
+
+.card,
+.btn {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+
+}
+
+.btn:hover {
+  background-color: var(--cor-amarelo);
+}
+
+.helper-text {
+  display: none;
+}
+
+.hidden-alert {
+  display: none;
+}
+
+.btn {
+  background-color: var(--cor-amarelo-escuro);
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  color: black;
 }
 
 @media (max-width: 100%) {
@@ -61,4 +100,3 @@
   }
   
 }
-
