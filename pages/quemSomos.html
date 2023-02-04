@@ -6,12 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sweet Dreams</title>
-  <script src="https://kit.fontawesome.com/463b6a11a4.js"></script>
+  <script src="https://kit.fontawesome.com/463b6a11a4.js" defer></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="../assets/scripts/quemSomos.js" defer></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/quemSomos.css">
+  <!--HEADER-FOOTER-CSS-->
+  <link rel="stylesheet" href="../assets/css/header-footer.css">
 </head>
 
-<body class="quem-somos-body">
+<body>
   <header>
     <div class="header-container">
       <div class="header-logo">
@@ -23,7 +27,7 @@
           <li><a href="./quemSomos.html" class="header-nav-link nav-quem-somos">Quem Somos</a></li>
           <li><a href="./missao.html" class="header-nav-link nav-missao">Missão</a></li>
           <li><a href="./produtos.html" class="header-nav-link nav-produtos">Produtos</a></li>
-          <li><a href="./geolocalizacao.html" class="header-nav-link nav-localizacao">Localização</a></li>
+          <li><a href="./geolocalizacao.html" class="header-nav-link nav-localização">Localização</a></li>
         </ul>
       </nav>
     </div>
@@ -88,55 +92,54 @@
     </div>
   </main>
   <footer>
-    <div class="row">
-      <div class="all">
-        <img src="assets/localização.png" class="localizaçao" />
-        <p>
-          Click na imagem que irá direcionar para localização da nossa loja.
-        </p>
-      </div>
-      <div class="all">
-        <h3>Unidades<div class="underline"><span></span></div>
-        </h3>
-        <p>Av.Brasil</p>
-        <p>Bairro: 31 de Janeiro</p>
-        <p>São Paulo, Capital,Brazil</p>
-        <p class="email-id">sweet-dreams@gmail.com</p>
-        <h3>(15) xxxx-xxxx</h3>
-      </div>
-      <div class="all">
-        <h3>Link <div class="underline"></div><span></span></h3>
-        <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Quem Somos</a></li>
-          <li><a href="">Missão</a></li>
-          <li><a href="">Produtos</a></li>
-          <li><a href="">contatos</a></li>
-        </ul>
-      </div>
-
-      <div class="all">
-        <h3>Deixe seu email para contato<div class="underline"></div><span></span></h3>
-        <form action="">
-          <i class="fa-regular fa-envelope"></i>
-          <input type="Email" placeholder="digite seu email" required />
-          <button type="Enviar">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </form>
-        <div class="social-icons">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-whatsapp"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-tiktok"></i>
+      <div class="row">
+        <div class="all">
+          <div class="logo-img-caixa">
+            <img src="../assets/images/logo.png" class="logo-footer" />
+          </div>
+        </div>
+        <div class="all">
+          <h3>Unidades<div class="underline"><span></span></div>
+          </h3>
+          <p>Av.Brasil</p>
+          <p>Bairro: 31 de Janeiro</p>
+          <p>São Paulo, Capital,Brazil</p>
+          <p class="email-id">sweet-dreams@gmail.com</p>
+          <h3>(15) xxxx-xxxx</h3>
+        </div>
+        <div class="all">
+          <h3>Link <div class="underline"></div><span></span></h3>
+          <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Quem Somos</a></li>
+            <li><a href="">Missão</a></li>
+            <li><a href="">Produtos</a></li>
+            <li class="trabalheconosco"><a href="formulario.html"><b>Trabalhe Conosco</b></a></li>
+          </ul>
+        </div>
+  
+        <div class="all">
+          <h3>Deixe seu email para contato<div class="underline"></div><span></span></h3>
+          <form action="">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="Email" placeholder="digite seu email" required />
+            <button type="Enviar">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
         </div>
       </div>
-    </div>
-    <hr>
-    <p class="copyright">curso de programação 2022-All Rights Reserved</p>
-  </footer>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="../assets/scripts/script.js"></script>
+      <hr>
+      <p class="copyright">curso de programação 2022-all Rights Reserved</p>
+    </footer>
+  
+ 
 </body>
 </html>
