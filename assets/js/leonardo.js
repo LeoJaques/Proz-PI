@@ -56,7 +56,7 @@ if (verifyPage('milkshake.html')) {
 
     for (let i = 0; i < cardsFigure.length; i++) {
       cardsFigure[i].style.height = "250px"
-      cardsFigure[i].style.width = "250px"
+      cardsFigure[i].style.maxWidth = "250px"
       cardsImg[i].style.width = "100%"
       cardsImg[i].style.height = "100%"
       bntCards[i].classList.add('fs-5')
