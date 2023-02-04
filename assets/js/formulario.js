@@ -12,9 +12,9 @@ form.addEventListener('submit', (event) => {
   nameValidate();
   sobrenomeValidate();
   emailValidate();
-  telefoneValidate()
+  telefoneValidate();
   enviar(event);
-});
+})
 
 function setError(index) {
   campos[index].style.borderBottom = '2px solid #cc1100';

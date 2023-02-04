@@ -177,7 +177,7 @@ var VanillaTilt = function () {
     return "undefined" != typeof document && (window.VanillaTilt = t, t.init(document.querySelectorAll("[data-tilt]"))), t
 }();
 
-VanillaTilt.init(document.querySelectorAll(".card"), {
+VanillaTilt.init(document.querySelectorAll(".card-main"), {
     max: 25,
     speed: 400,
     scale: 1.1, //escala//
