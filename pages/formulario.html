@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/formulario.css">
+    <script src="../assets/js/formulario.js" defer></script>
+    <title> Sweet Dreams</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="../assets/images/logo.png" alt="logo">
+            </div>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li><a href="../index.html" id="button">Voltar ao Menu principal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="formulario">
+        <div class="box">
+            <form id="form">
+                <fieldset>
+                    <legend><b>Dados Pessoais</b></legend>
+                    <br><br>
+                    <div class="inputbox">
+                        <input type="text" name="username" id="username" class="inputUser required" autocomplete="off"
+                            required oninput="nameValidate()">
+                        <label for="username" class="labelinput" id="labelNome">Nome</label>
+                        <span class="span-required">Coloque um Nome Válido</span>
+                        <br />
+                    </div>
+                    <br><br>
+                    <div class="inputbox">
+                        <input type="text" name="sobrenome" id="sobrenome" class="inputUser required" autocomplete="off"
+                            required oninput="sobrenomeValidate()">
+                        <label for="sobrenome" class="labelinput" id="labelSobrenome">Sobrenome</label>
+                        <span class="span-required">Coloque um Sobrenome Válido</span>
+                    </div>
+                    <br><br>
+                    <div class="inputbox">
+                        <input type="text" name="email" id="email" class="inputUser required" autocomplete="off"
+                            required oninput="emailValidate()">
+                        <label for="email" class="labelinput" id="labelEmail">Email</label>
+                        <span class="span-required">insira um email válido</span>
+                    </div>
+                    <br><br>
+                    <div class="inputbox">
+                        <input type="tel" name="telefone" id="telefone" minlength="14" maxlength="15"
+                            class="inputUser required" autocomplete="off" required oninput="telefoneValidate()">
+                        <label for="telefone" class="labelinput" id="labelTelefone">Telefone</label>
+                        <span class="span-required">insira um numero válido</span>
+                    </div>
+                    <div class="inputbox">
+                        <br>
+                        <label for="data-nascimento"> <b> Data de Nascimento</b> </label>
+                        <input type="date" name="data-nascimento" id="data_nascimento" required>
+                    </div>
+                    <br>
+                    <p>Estado Civil:</p>
+                    <input type="radio" id="solteiro" name="estadocivil" value="solteiro" required>
+                    <label for="solteiro">Solteiro</label>
+                    <br>
+                    <input type="radio" id="casado" name="estadocivil" value="casado" required>
+                    <label for="casado">Casado</label>
+                    <br><br>
+                    <div class="inputbox">
+                        <label for="filhos">Filhos:</label>
+                        <input class="filhos-input" type="number" id="filhos" name="filhos" max="10" min="0">
+                    </div>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend><b>Dados profissionais</b></legend>
+                    <br><br>
+                    <p>Escolaridade:</p>
+                    <input type="radio" id="incompleto" name="escolaridade" value="incompleto" required>
+                    <label for="incompleto">Ensino Médio Incompleto</label>
+                    <br>
+                    <input type="radio" id="completo" name="escolaridade" value="completo" required>
+                    <label for="completo">Ensino Médio Completo</label>
+                    <br>
+                    <input type="radio" id="superior" name="escolaridade" value="superior" required>
+                    <label for="superior">Superior Completo</label>
+                    <br><br>
+                    <div class="inputbox">
+                        <label for="sobre">Fale sobre Você:</label>
+                    </div>
+                    <div class="inputbox">
+                        <textarea name="sobre" id="sobre" cols="30" rows="5" placeholder="Descreva as suas habilidades"
+                            autocomplete="off"></textarea>
+                    </div>
+                    <div class="inputbox">
+                        <input type="file" accept=".pdf, .docx">
+                    </div>
+                    <br>
+                </fieldset>
+                <br>
+                <div class="button">
+                    <input  style="margin-right: 20px;" type="submit" id="submit">
+                    <input type="reset" id="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

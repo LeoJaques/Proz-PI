@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+
+:root {
+  --cor-rosa: #F3C7E6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  padding: 70px;
+  margin: auto;
+  text-align: center; 
+  backdrop-filter: blur(5px);
+  background-color: transparent;
+}
+
+.container:hover{   
+  background-color: var(--cor-rosa);
+  color: rgb(12, 8, 8);
+}
+
+p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'EB Garamond', serif;
+  font-size: 23px;
+  text-align: justify;
+  margin-left: 30px; 
+  margin-right: 30px; 
+}
+
+.primeiro {
+  margin-top: 120px;
+}
+
+.ultimo {
+  margin-bottom: 120px;
+}
+
+.missao {
+
+  background-color: var(--cor-rosa);
+}
+
+.borda {
+  background-image: url("../images/pngwing.com\ \(11\).png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+}
+
+.alinhar {
+  position: relative;
+  margin-left: 50%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  color: black;
+}
+
+/*------------------------RESPONSIVE-------------*/
+
+@media (max-width: 100%) {
+  .row {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+}
+
+@media (max-width: 80%) {
+  .localizacao {
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+}
+
+/*------------------RESPONSIVE-------*/
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
