@@ -1,380 +1,260 @@
-/*=============================GERAIS===================================*/
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-:root {
-    --cor-azul:#7ab4bf;
-    --cor-azul-bb: #AEE5E5;
-    --azul-claro: #98dfee;
-    --cor-azul-escuro: #283BE5;
-    --cor-rosa-bb: #F3C7E6;
-    --cor-amarelo: #FFEAA9;
-    --cor-amarelo-escuro: #F3DC94;
-    --cor-amarelo-queimado: #736029 ;
-    --cor-amarelo-intenso:#f4cd58;
-    --cor-rosa-escuro:#F25A70;
-    --cor-rosa-acai:#733C62 ;
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gentium+Book+Basic:ital@0;1&family=Lobster&family=Pacifico&display=swap');
 
-/*=============================HEADER===================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0px 2%;
+}
+
+:root {
+  --cor-azulclaro: #AEE5E5;
+  --cor-rosa-bb: #F3C7E6;
+  --cor-amarelo: #FFEAA9;
+  --cor-rosa-escuro: #F25A70;
+}
+
+body {
+  background-color: var(--cor-amarelo);
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 header {
-    background-color: var(--cor-azul-bb);
-  }
-  
-  .header-container {
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-  }
-  
-  .header-logo img{
-    width: 100%;
-  }
-  
-  .header-logo {
-    width: 150px;
-  }
-  
-  .header-menu {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .header-nav-link {
-    color: black;
-    text-decoration: none;
-    margin-left: 10px;
-    font-size: 1.1em;
-    padding: 10px;
-  }
-  
-  .header-nav-link:hover {
-    color: var(--cor-rosa-escuro);
-    border-radius: 20px;
-  }
-  
-  .nav-inicio:hover {
-    background-color: var(--cor-rosa-bb);
-  }
-  
-  .nav-quem-somos:hover {
-    background-color: var(--cor-amarelo);
-  }
-  
-  .nav-missao:hover {
-    background-color: var(--cor-rosa-bb); 
-  }
-  
-  .nav-produtos:hover {
-    background-color: var(--cor-amarelo);  
-  }
-
-/*============================PRODUTOS-THALIA================================*/
-
-.body-produtos{
-    background-color: var(--azul-claro);
+  border-bottom: 10px solid black;
 }
 
-.section-produtos h1{
-    color: var(--cor-azul-escuro);
-    text-align: center;
-    font-family: 'Courgette', cursive;
-    font-size: 35px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 5px;
+
+li {
+  list-style: none;
 }
 
-.section-produtos p{
-    font-size: 20px;
-    padding-left: 30px;
+a {
+  text-decoration: none;
 }
 
-.article-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1000px;
-    flex-direction: row;
-    text-align: center;
+
+
+main {
+
+  background-size: cover;
 }
 
-.article-container div{
-    margin: 30px;
-    flex: 1 1 300px;
-    width: 400px;
+
+.menu .main-menu {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  margin-right: 30px;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  color: black;
 }
 
-.produtos-tipos{
-    text-align: center;
-    padding: 20px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
+.menu .main-menu:hover {
+  background-color: #F25A70;
+  border-radius: 30px;
+  color: #000;
 }
-.item1 {
-    background: linear-gradient(180deg,var(--cor-amarelo),var(--cor-amarelo-intenso));
-    border-radius: 20px;
-    padding-top: 20px;
+
+
+.sorvete {
+  font-size: 35px;
+  margin-left: 40px;
 }
-.item2{
-    background: linear-gradient(180deg, var(--cor-rosa-bb),var(--cor-rosa-escuro));
-    border-radius: 20px;
+
+.section-principal {
+  background: linear-gradient(to right, #AEE5E5, #F3C7E6);
 }
-.link{
+
+.div-principal {
+  background-image: url("assets/principal.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+main section h1 {
+  font-family: "lobster";
+  font-size: 35px;
+  padding: 10px;
+}
+
+main section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  text-align: justify;
+  padding: 100px;
+}
+
+.class-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.cor {
+  padding: 30px 0;
+  font-family: "lobster";
+  background-color: var(--cor-amarelo);
+}
+
+.hoje-tem {
+  font-family: "lobster";
+  font-size: 25px;
+  text-align: center;
+  padding: 50px;
+  background: var(--cor-rosa-bb);
+}
+
+.bloco-img {
+  border-radius: 30px;
+  width: 200px;
+  height: 262px;
+}
+/* 
+footer {
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #AEE5E5, #F3C7E6);
+  color: black;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 1em;
+  line-height: 20px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.all {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.all:nth-child(2),
+.all:nth-child(3) {
+  flex-basis: 15%;
+
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.all h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin: 20px 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+ul li a {
   text-decoration: none;
   color: black;
 }
 
-/*===========================SORVETES-THALIA=================================*/
-
- .sorvetes {
-    background-color: var(--cor-amarelo);
-}
-.sorvetes-título {
-    color: var(--cor-amarelo-queimado);
-    text-align: center;
-    font-family: 'Courgette', cursive;
-    font-size: 35px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 5px;
-}
-.sorvetes-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    text-align: start;
-}
-.sorvetes-tipos{
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
-    text-align: center;
-}
-.item3{
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    background: linear-gradient(180deg, var(--cor-rosa-bb), var(--cor-rosa-escuro));
-    border-radius: 20px;
-    width: 500px;
-}
-.item4{
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    background: linear-gradient(180deg, var(--azul-claro), var(--cor-azul));
-    border-radius: 20px;
-    width: 500px;
-}
-.sorvetes-sabores, .sorvetes-cobertura, .sorvetes-acompanhamentos, .sorvetes-recheio{
-    text-align: center;   
-    font-size: 22px;
-    padding-top: 20px;
-}
-div img{
-    align-items: center;
+form {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin-bottom: 50px;
 }
 
-li{
-    font-size: 18px;
+form .far {
+  font-size: 10px;
+  margin-right: 10px;
 }
 
-/*===========================PICOLÉS-THALIA==================================*/
-
-.picoles{
-    background-color: var(--cor-rosa-bb);
+form input {
+  width: 100%;
+  background: transparent;
+  color: var(--cor-rosa-escuro);
+  border: 0;
+  outline: none;
 }
 
-.picoles-titulo{
-  color: var(--cor-rosa-acai);
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+} */
+
+form button .fa-solid {
+  font-size: 16px;
+  color: var(--cor-rosa-escuro);
+}
+
+.social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   text-align: center;
-  font-family: 'Courgette', cursive;
-  font-size: 35px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 5px;
+  line-height: 40px;
+  font-size: 20px;
+  color: var(--cor-rosa-escuro);
+  background: rgb(255, 234, 169);
+  background: radial-gradient(circle, rgba(255, 234, 169, 1) 34%, rgba(57, 208, 240, 1) 93%);
+  cursor: pointer;
 }
 
-.picoles-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    text-align: start;
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin: 20px auto;
 }
 
-.item5{
-  background: linear-gradient(180deg,var(--cor-amarelo),var(--cor-amarelo-intenso));
-    border-radius: 20px;
+.copyright {
+  text-align: center;
 }
 
-.item6{
-    background: linear-gradient(180deg, var(--azul-claro), var(--cor-azul));
-    border-radius: 20px;
-    width: 480px;
+.underline {
+  width: 100%;
+  height: 5px;
+  background: var(--cor-rosa-escuro);
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
 }
 
-.picoles-tipos{
-  font-family: 'Dancing Script', cursive;
-    font-size: 40px;
-    text-align: center;  
+.localizaçao {
+  width: 200px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: -2px 2px 5px black;
 }
 
-.picoles-sabores{
-  text-align: center;   
-    font-size: 22px;
-    padding-top: 20px;
+.container-geoloc{
+  padding: 100px;
 }
-/*=================================FOOTER====================================*/
-
-footer {
-     width: 100%;
-     bottom: 0;
-     background: linear-gradient(to right, var(--cor-azul-bb), var(--cor-rosa-bb));
-     color: black;
-     padding: 100px 0 30px;
-     border-top-left-radius: 125px;
-     font-size: 1em;
-     line-height: 20px;
-   }
-
-   .row {
-     width: 85%;
-     margin: auto;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: flex-start;
-     justify-content: space-between;
-   }
-
-   .all {
-     flex-basis: 25%;
-     padding: 10px;
-   }
-
-   .all:nth-child(2),
-   .all:nth-child(3) {
-     flex-basis: 15%;
-   }
-
-   .logo {
-     margin-bottom: 30px;
-   }
-
-   .all h3 {
-     width: fit-content;
-     margin-bottom: 40px;
-     position: relative;
-   }
-
-   .email-id {
-     width: fit-content;
-     border-bottom: 1px solid var(--cor-rosa-escuro);
-     margin: 20px 0;
-   }
-
-   ul li {
-     list-style: none;
-     margin-bottom: 12px;
-   }
-
-   ul li a {
-     text-decoration: none;
-     color: black;
-   }
-
-   form {
-     padding: 15px;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     border-bottom: 1px solid var(--cor-rosa-escuro);
-     margin-bottom: 50px;
-   }
-
-   form .far {
-     font-size: 10px;
-     margin-right: 10px;
-   }
-
-   form input {
-     width: 100%;
-     background: transparent;
-     color: var(--cor-rosa-escuro);
-     border: 0;
-     outline: none;
-   }
-
-   form button {
-     background: transparent;
-     border: 0;
-     outline: none;
-     cursor: pointer;
-   }
-
-   form button .fa-solid {
-     font-size: 16px;
-     color: var(--cor-rosa-escuro);
-   }
-
-   .social-icons .fa-brands {
-     width: 40px;
-     height: 40px;
-     border-radius: 50%;
-     text-align: center;
-     line-height: 40px;
-     font-size: 20px;
-     color: var(--cor-rosa-escuro);
-     background: var(--cor-amarelo);
-     background: radial-gradient(circle, rgba(255, 234, 169, 1) 34%, rgba(57, 208, 240, 1) 93%);
-     cursor: pointer;
-   }
-
-   hr {
-     width: 90%;
-     border: 0;
-     border-bottom: 1px solid var(--cor-rosa-escuro);
-     margin: 20px auto;
-   }
-
-   .copyright {
-     text-align: center;
-   }
-
-   .underline {
-     width: 100%;
-     height: 5px;
-     background: var(--cor-rosa-escuro);
-     border-radius: 3px;
-     position: absolute;
-     top: 25px;
-     left: 0;
-   }
-
-   .localizaçao {
-     width: 200px;
-     border-radius: 20px;
-     filter: drop-shadow(-2px 2px 5px black);
-   }
-
-
-
-
-
-
-
-
-  

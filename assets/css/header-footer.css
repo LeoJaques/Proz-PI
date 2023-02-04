@@ -1,213 +1,237 @@
 :root {
-    --cor-azulclaro: #AEE5E5;
-    --cor-rosa-bb: #F3C7E6;
-    --cor-amarelo: #FFEAA9;
-    --cor-rosa-escuro: #F25A70;
-    --cor-azul---:#98dfee;
-  }
+  --cor-azulclaro: #AEE5E5;
+  --cor-rosa-bb: #F3C7E6;
+  --cor-amarelo: #FFEAA9;
+  --cor-rosa-escuro: #F25A70;
+  --cor-azul---: #98dfee;
+}
 
 
 html {
- scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 header {
- background-color: var(--cor-azulclaro);
- border-bottom: 5px solid black;
+  background-color: var(--cor-azulclaro);
+  border-bottom: 5px solid black;
 }
 
 .header-container {
- margin: auto;
- display: flex;
- justify-content: space-between;
- align-items: center;
- max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
 }
 
 .header-logo img {
- width: 100%;
+  width: 100%;
 }
 
 .header-logo {
- width: 150px;
+  width: 150px;
 }
 
 .header-menu {
- list-style: none;
- display: inline-flex;
- flex-wrap: wrap;
- align-items: center;
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 header .header-menu a:hover {
- display: inline-block;
- background-color: #F25A70;
- border-radius: 30px;
- color: var(--cor-azulclaro);
- height: 60px;
- line-height: 60px;
- padding-left: 25px;
- padding-right: 25px;
- transition: .5s;
+  display: inline-block;
+  background-color: #F25A70;
+  border-radius: 30px;
+  color: var(--cor-azulclaro);
+  height: 60px;
+  line-height: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: .5s;
 }
 
 a {
- font-size: 20px;
- font-weight: 500;
- text-decoration: none;
- margin-right: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 40px;
 
 }
 
 #button {
- display: inline-block;
- background-color: var(--cor-rosa-escuro);
- height: 60px;
- line-height: 60px;
- padding-left: 25px;
- padding-right: 25px;
- box-shadow: 5px 5px 0px black;
- border-radius: 30px;
+  display: inline-block;
+  background-color: var(--cor-rosa-escuro);
+  height: 60px;
+  line-height: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 5px 5px 0px black;
+  border-radius: 30px;
 
 }
 
 
- /*----------------------------------------Footer------------------------------------------------*/
+/*----------------------------------------Footer------------------------------------------------*/
 
 
 
 footer {
- width: 100%;
- bottom: 0;
- background-color: var(--cor-azul---);
- color: black;
- padding: 100px 0 30px;
- border-top-left-radius: 125px;
- font-size: 1em;
- line-height: 20px;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--cor-azul---);
+  color: black;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 1em;
+  line-height: 20px;
 }
 
 .row {
- width: 85%;
- margin: auto;
- display: flex;
- flex-wrap: wrap;
- align-items: flex-start;
- justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .all {
- flex-basis: 25%;
- padding: 15px;
+  flex-basis: 25%;
+  padding: 15px;
 }
 
 .all:nth-child(2),
 .all:nth-child(3) {
- flex-basis: 20%;
+  flex-basis: 20%;
 }
 
 .all h3 {
- width: fit-content;
- margin-bottom: 40px;
- position: relative;
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
 }
 
 .email-id {
- width: fit-content;
- border-bottom: 1px solid var(--cor-rosa-escuro);
- margin: 20px 0;
+  width: fit-content;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin: 20px 0;
 }
-.trabalheconosco{
- width: fit-content;
- border-bottom: 1px solid var(--cor-rosa-escuro);
- margin: 20px 0;
- font-size: 15px;
+
+.trabalheconosco {
+  width: fit-content;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin: 20px 0;
+  font-size: 15px;
 }
 
 ul li {
- list-style: none;
- margin-bottom: 12px;
+  list-style: none;
+  margin-bottom: 12px;
 }
 
 ul li a {
- text-decoration: none;
- color: black;
+  text-decoration: none;
+  color: black;
 }
 
 form {
- padding: 15px;
- display: flex;
- align-items: center;
- justify-content: space-between;
- border-bottom: 1px solid var(--cor-rosa-escuro);
- margin-bottom: 50px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin-bottom: 50px;
 }
 
 form .far {
- font-size: 10px;
- margin-right: 10px;
+  font-size: 10px;
+  margin-right: 10px;
 }
 
 form input {
- width: 100%;
- background: transparent;
- color: var(--cor-rosa-escuro);
- border: 0;
- outline: none;
+  width: 100%;
+  background: transparent;
+  color: var(--cor-rosa-escuro);
+  border: 0;
+  outline: none;
 }
 
 form button {
- background: transparent;
- border: 0;
- outline: none;
- cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
 
 form button .fa-solid {
- font-size: 16px;
- color: var(--cor-rosa-escuro);
+  font-size: 16px;
+  color: var(--cor-rosa-escuro);
 }
 
 .social-icons .fa-brands {
- width: 40px;
- height: 40px;
- border-radius: 50%;
- text-align: center;
- line-height: 40px;
- font-size: 20px;
- color: var(--cor-rosa-escuro);
- background: rgb(255, 234, 169);
- background: radial-gradient(circle, rgba(255, 234, 169, 1) 34%, rgba(57, 208, 240, 1) 93%);
- cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: var(--cor-rosa-escuro);
+  background: rgb(255, 234, 169);
+  background: radial-gradient(circle, rgba(255, 234, 169, 1) 34%, rgba(57, 208, 240, 1) 93%);
+  cursor: pointer;
 }
 
 hr {
- width: 90%;
- border: 0;
- border-bottom: 1px solid var(--cor-rosa-escuro);
- margin: 20px auto;
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid var(--cor-rosa-escuro);
+  margin: 20px auto;
 }
 
 .copyright {
- text-align: center;
+  text-align: center;
 }
 
 .underline {
- width: 100%;
- height: 5px;
- background: var(--cor-rosa-escuro);
- border-radius: 3px;
- position: absolute;
- top: 25px;
- left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--cor-rosa-escuro);
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
 }
 
 .logo-footer {
- width: 200px;
+  width: 200px;
 }
 
 .logo-img-caixa {
- width: 200px;
- height: 200px;
- box-shadow: 2px 1px 2px #0003;
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 1px 2px #0003;
+}
+
+
+
+/*------------------------RESPONSIVE-------------*/
+
+ @media (max-width: 100%) {
+  .row {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 80%) {
+  .localizacao {
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+  }
+
 }
