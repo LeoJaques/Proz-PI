@@ -1,74 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Milk-Shake</title>
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="../assets/logo.png" alt="">
-    </div>
-    <h1>Milk-Shake</h1>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Quem Somos</a>
-        <a href="#">Missão</a>
-        <a href="#">Produtos</a>
-        <a href="#">Localização</a>
-     </nav>
-  </header>
-  <main>
-    <div class="main-container">
-      <div class="main-imagens">
-        <img src="../assets/milkshake.png" alt="Milk-Shake">
-      </div>
-      <div class="main-list">
-        <dl>
-          <dt>
-            Sabores:
-          </dt>
-          <ul>
-            <li>Baunilha</li>
-            <li>chocolate</li>
-            <li>Choco menta</li>
-            <li>Coco</li>
-            <li>Leite Ninho</li>
-            <li>Negresco</li>
-            <li>Óreo</li>
-            <li>Uva</li>
-            <li>Chocolate com Banana</li>
-            <li>Napolitano</li>
-            <li>Morango</li>
-            <li>Ovomaltine</li>
-            <li>Maracujá</li>
-            <li>Duo chocolate</li>
+  <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
+  <!--BOOTSTRAP CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-          </ul>
+  <!--HEADER-FOOTER-CSS-->
+  <link rel="stylesheet" href="../assets/css/header-footer.css">
+  <!--MY-CSS-->
+  <link rel="stylesheet" href="../assets/css/leonardo.css">
+  <!--MY-JS-->
+  <script src="../assets/js/leonardo.js" defer></script>
+</head>
+
+<body class="main-milkshake">
+  <header>
+    <div class="header-container">
+      <div class="header-logo">
+        <img src="../assets/images/logo.png" alt="logo">
+      </div>
+      <nav class="header-nav">
+        <ul class="header-menu">
+          <li><a href="../index.html" class="header-nav-link nav-inicio">Inicio</a></li>
+          <li><a href="./quemSomos.html" class="header-nav-link nav-quem-somos">Quem Somos</a></li>
+          <li><a href="./missao.html" class="header-nav-link nav-missao">Missão</a></li>
+          <li><a href="./produtos.html" class="header-nav-link nav-produtos">Produtos</a></li>
+          <li><a href="./geolocalizacao.html" class="header-nav-link nav-localização">Localização</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="p-5">
+    <div class="container ">
+      <div class="row justify-content-center g-3 ">
+        <div class="col-12 col-lg-4 col-md-6 ">
+          <div class="card p-2">
+            <figure class="figure-card mx-auto">
+              <img class="card-img-top card1" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Clássico</h5>
+              <p class="card-text">Uma sobremesa deliciosa e refrescante, feita com sorvete e leite. Ideal para dias
+                quentes, com várias opções de sabores.</p>
+              <!--button-modal-milkshake-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#classic-modal">Ver mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 ">
+          <div class="card p-2">
+            <figure class="figure-card mx-auto">
+              <img class="card-img-top card2" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Especial</h5>
+              <p class="card-text">uma deliciosa combinação de sorvete e leite batidos juntos, com adições como frutas,
+                nozes, chocolate e muito mais.</p>
+              <!--button-modal-special-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#special-modal">Ver mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card p-2">
+            <figure class="figure-card mx-auto">
+              <img class="card-img-top card3" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Combos</h5>
+              <p class="card-text">Está esperando o que? Se um já é em bom então pede dois, chame um amigo e vem
+                conferir. Oferta por tempo limitado</p>
+              <!--button-modal-Combos-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#combo-modal">Ver mais</button>
+            </div>
+          </div>
+        </div>
+
+      </div> <!--/row-->
+    </div> <!--/container-->
+
+    <!--CLASSIC-MODAL-->
+    <div class="modal fade" id="classic-modal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="milkShakeClassicModalLabel">Milk-Shake Clássico - Opções</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <dl>
+              <dl>
+                <dt>
+                  Sabores:
+                </dt>
+                <ul>
+                  <li>Baunilha</li>
+                  <li>chocolate</li>
+                  <li>Choco menta</li>
+                  <li>Coco</li>
+                  <li>Uva</li>
+                  <li>Chocolate com Banana</li>
+                  <li>Napolitano</li>
+                  <li>Morango</li>
+                  <li>Maracujá</li>
+                  <li>Duo chocolate</li>
+
+                </ul>
+              </dl>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
       </div>
     </div>
+
+    <!--SPECIAL-MODAL-->
+    <div class="modal fade" id="special-modal" tabindex="-1" aria-labelledby="specialModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="milkShakeSpecialModalLabel">Milk-Shake Especial - Opções</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <dl>
+              <dt>
+                Sabores:
+              </dt>
+              <ul>
+                <li>Leite Ninho</li>
+                <li>Negresco</li>
+                <li>Óreo</li>
+                <li>Ovomaltine</li>
+                <li>Ferrero Rocher</li>
+                <li>Milka</li>
+                <li>Nutella</li>
+              </ul>
+            </dl>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <!--COMBO-MODAL-->
+    <div class="modal fade" id="combo-modal" tabindex="-1" aria-labelledby="comboModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="milkShakeComboModalLabel">Combos - Opções</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <dl>
+              <dt>
+                Oferta por tempo limitado
+              </dt>
+              <ul>
+                <li>1 Milk-Shake Classico</li>
+                <li>1 Milk-Shake Especial</li>
+                <li>E paga só pelo especial</li>
+              </ul>
+            </dl>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+
   </main>
   <footer>
-    <h3>Contatos:</h3>
-    <p>Telefone:<a href="tel:+5511999999999">&#40;11&#41; 99999-9999</a></p>
-    <img src="../assets/icons/whatsapp.png" width="20px" alt="whatsapp">
-    <p><br>Rua:av.Brasil,Bairro 31 de Janeiro,SP
-    </p>
-    <h3>Sigam-nos nas redes sociais!</h3>
-    <a href="#">
-      <img src="../assets/icons/facebook.png" width="20px"alt="facebook">
-    </a>
-    <a href="#">
-      <img src="../assets/icons/instagram.png" width="20px"alt="instagram">
-    </a>
-    <a href="#">
-      <img src="../assets/icons/twitter.png" width="20px" alt="twitter">
-    </a>
-    <a href="#">
-      <img src="../assets/icons/tik-tok.png"width="20px" alt="tik-tok">
-    </a>
+    <div class="row">
+      <div class="all">
+        <div class="logo-img-caixa">
+          <img src="../assets/images/logo.png" class="logo-footer" />
+        </div>
+      </div>
+      <div class="all">
+        <h3>Unidades<div class="underline"><span></span></div>
+        </h3>
+        <p>Av.Brasil</p>
+        <p>Bairro: 31 de Janeiro</p>
+        <p>São Paulo, Capital,Brazil</p>
+        <p class="email-id">sweet-dreams@gmail.com</p>
+        <h3>(15) xxxx-xxxx</h3>
+      </div>
+      <div class="all">
+        <h3>Link <div class="underline"></div><span></span></h3>
+        <ul>
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Quem Somos</a></li>
+          <li><a href="">Missão</a></li>
+          <li><a href="">Produtos</a></li>
+          <li class="trabalheconosco"><a href="./formulario.html"><b>Trabalhe Conosco</b></a></li>
+        </ul>
+      </div>
+
+      <div class="all">
+        <h3>Deixe seu email para contato<div class="underline"></div><span></span></h3>
+        <form action="">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="Email" placeholder="digite seu email" required />
+          <button type="Enviar">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">curso de programação 2022-all Rights Reserved</p>
   </footer>
+
+  <!--BOOTSTRAP SCRIPT-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
