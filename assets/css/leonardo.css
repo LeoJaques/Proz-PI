@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+:root {
+    --cor-amarelo: #FFEAA9;
+    --cor-amarelo-escuro: #FFDD75;
+  }  
+
+/*=============================STYLE===================================*/
+
+.main-acai,
+.main-milkshake,
+.main-pote-sorvete {
+  background-color: var(--cor-amarelo);
+
+}
+
+.btn {
+  background-color: var(--cor-amarelo-escuro);
+  font-family: 'EB Garamond', serif;
+  font-size: 1.8rem;
+  color: black;
+}
+
+.card-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+} 
+
+.card-text {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.6rem;
+  height: 250px;
+  text-indent: 10px;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+/*=============================CARDS===================================*/
+.card,
+.btn {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+
+}
+
+.btn:hover {
+  background-color: var(--cor-amarelo);
+}
+
+/*=============================BOOTATRAP-ALERTS===================================*/
+
+.helper-text {
+  display: none;
+}
+
+.hidden-alert {
+  display: none;
+}
