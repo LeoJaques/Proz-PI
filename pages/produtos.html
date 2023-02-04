@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/463b6a11a4.js"></script> 
     <title>Produtos</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/produtos.css">
+    <link rel="stylesheet" href="/assets/css/header-footer.css">
     <style>
       .img {
         height: 320px;
@@ -14,75 +16,78 @@
       }
     </style>
 </head>
-<body class="body-produtos">
+
+<body class="produtos">
   <header>
     <div class="header-container">
-    <div class="header-logo">
-      <img src="../assets/images/logo (1).png" alt="logo">
-    </div>
+      <div class="header-logo">
+        <img src="/assets/images/logo.png" alt="logo">
+      </div>
       <nav class="header-nav">
         <ul class="header-menu">
           <li><a href="#" class="header-nav-link nav-inicio">Inicio</a></li>
           <li><a href="#" class="header-nav-link nav-quem-somos">Quem Somos</a></li>
           <li><a href="#" class="header-nav-link nav-missao">Missão</a></li>
           <li><a href="#" class="header-nav-link nav-produtos">Produtos</a></li>
+          <li><a href="#" class="header-nav-link nav-localização" id="button">Localização</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <section class="section-produtos">
-    <h1>Produtos</h1>
-    <p>A Sweet Dreams Sorvetes oferece uma experiência única para você! Aqui oferecemos uma grande variedades de produtos, desde Picolés à Milk-Shake</p>
-  </section>
-  <article class="article-container">
-    <div class="item1">
-        <a href="picoles.html" class="link">
-          <img src="../assets/images/Picolés_produtos.png "
-          width="400px"
-          alt="Picolés">
-          <h2 class="produtos-tipos">Picolés</h2>
-        </a>
-    </div>
-    <div class="item2">
-        <a href="sorvetes.html" class="link">
-          <img src="../assets/images/sorvetes_produtos.png"
-          width="400px"
-          alt="Sorvetes">
-          <h2 class="produtos-tipos">Sorvetes</a></h2>
-        </a>
-    </div>
-    <div class="item2" >
-        <a href="milkshake.html" class="link">
-          <img src="../assets/images/milkshake_produtos.png"
-          width="400px"
-          alt="Milk-Shake">
-          <h2 class="produtos-tipos">Milk-Shake</a></h2>
-        </a>
-    </div>
-    <div class="item1">
-        <a href="acai.html" class="link">
-          <img src="../assets/images/acai_produtos.png"
-          width="400px"
-          alt="Açaí">
-          <h2 class="produtos-tipos">Açaí</h2>
-        </a>
-    </div>
-    <div class="item1">
-        <a href="potessorvete.html" class="link">
-          <img src="../assets/images/potes_sorvetes_produtos.png"
-          width="400px"
-          alt="Potes de Sorvetes">
-          <h2 class="produtos-tipos">Potes de Sorvetes</h2>
-        </a>
-    </div>
-  </article>
+
+  <main>
+    <h1 class="produtos-h1">Produtos</h1>
+    <p class="produtos-p">A Sweet Dreams Sorvetes oferece uma experiência única para você! Aqui oferecemos uma grande variedades de produtos, desde Picolés à Milk-Shake</p>
+    <section class="container-produtos">
+      <div class="item1">
+          <a href="./picoles.html" class="link">
+            <img src="../assets/images/Picolés_produtos.png "
+            width="400px"
+            alt="Picolés">
+            <h2 class="produtos-h2">Picolés</h2>
+          </a>
+      </div>
+      <div class="item2">
+          <a href="./sorvetes.html" class="link">
+            <img src="../assets/images/sorvetes_produtos.png"
+            width="400px"
+            alt="Sorvetes">
+            <h2 class="produtos-h2">Sorvetes</h2>
+          </a>
+      </div>
+      <div class="item2" >
+          <a href="./milkshake.html" class="link">
+            <img src="../assets/images/milkshake_produtos.png"
+            width="400px"
+            alt="Milk-Shake">
+            <h2 class="produtos-h2">Milk-Shake</h2>
+          </a>
+      </div>
+      <div class="item1">
+          <a href="acai.html" class="link">
+            <img src="../assets/images/acai_produtos.png"
+            width="400px"
+            alt="Açaí">
+            <h2>Açaí</h2>
+          </a>
+      </div>
+      <div class="item1">
+          <a href="potessorvete.html" class="link">
+            <img src="../assets/images/potes_sorvetes_produtos.png"
+            width="400px"
+            alt="Potes de Sorvetes">
+            <h2>Potes de Sorvetes</h2>
+          </a>
+      </div>
+    </section>
+  </main>
+  
   <footer>
     <div class="row">
       <div class="all">
-        <img src="../assets/images/mapa.png" class="localizaçao" />
-        <p>
-          Click na imagem que irá direcionar para localização da nossa loja.
-        </p>
+        <div class="logo-img-caixa">
+          <img src="/assets/images/logo.png" class="logo-footer" />
+        </div>
       </div>
       <div class="all">
         <h3>Unidades<div class="underline"><span></span></div>
@@ -100,7 +105,7 @@
           <li><a href="">Quem Somos</a></li>
           <li><a href="">Missão</a></li>
           <li><a href="">Produtos</a></li>
-          <li><a href="">contatos</a></li>
+          <li class="trabalheconosco"><a href="formulario.html"><b>Trabalhe Conosco</b></a></li>
         </ul>
       </div>
 
@@ -123,7 +128,8 @@
       </div>
     </div>
     <hr>
-    <p class="copyright">curso de programação 2022-All Rights Reserved</p>
+    <p class="copyright">curso de programação 2022-all Rights Reserved</p>
   </footer>
+
 </body>
 </html>
