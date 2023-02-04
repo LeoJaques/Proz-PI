@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Açaí</title>
+  <!--BOOTSTRAP CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!--HEADER-FOOTER-CSS-->
+  <link rel="stylesheet" href="../assets/css/header-footer.css">
+  <!--MY-CSS-->
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/leonardo.css">
+  <!--MY-JS-->
+  <script src="../assets/js/leonardo.js" defer></script>
 </head>
+
 <body class="main-acai">
-  
+
   <header>
     <div class="header-container">
       <div class="header-logo">
@@ -20,51 +31,183 @@
           <li><a href="./quemSomos.html" class="header-nav-link nav-quem-somos">Quem Somos</a></li>
           <li><a href="./missao.html" class="header-nav-link nav-missao">Missão</a></li>
           <li><a href="./produtos.html" class="header-nav-link nav-produtos">Produtos</a></li>
-          <li><a href="./geolocalizacao.html" class="header-nav-link nav-localizacao">Localização</a></li>
+          <li><a href="./geolocalizacao.html" class="header-nav-link nav-localização">Localização</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main >
-    <div class="main-container">
-      <div class="main-imagens">
-        <img src="../assets/images/acai-01.png" alt="Taca de sorvete sabor açaí">
-        <img src="../assets/images/acai-02.png" alt="Bola de sorvete sabor açaí">
-      </div>
-      <div class="main-text">
-        <dl class="tamanhos">
-          <dt>
-            Tamanhos:
-          </dt>
-          <ul class="list-main">
-            <li class="li-main">200ml</li>
-            <li class="li-main">300ml</li>
-            <li class="li-main">500ml</li>
-            <li class="li-main">1L</li>
-          </ul>
-        </dl>
+  <main class="p-5">
+    <div class="container">
+      <div class="row justify-content-center g-3 ">
+        <div class="col-12 col-lg-4 col-md-6 ">
+          <div class="card p-2">
+            <figure class="figure-card mx-auto">
+              <img class="card-img-top card1" alt="Polpa de açaí congelada">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Polpa</h5>
+              <p class="card-text">Polpa de açaí congelada é saudável e prática, perfeita para smoothies e bowls. Rico
+                em antioxidantes e fibras.</p>
+              <!--button-modal-polpa-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#polpa-modal">Ver mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 ">
+          <div class="card p-2">
+            <figure class="figure-card mx-auto">
+              <img class="card-img-top card2" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Copo</h5>
+              <p class="card-text">Copo de açaí frozen é uma deliciosa opção saudável e refrescante, perfeita para dias
+                quentes.</p>
+              <!--button-modal-copo-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#copo-modal">Ver mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card p-2">
+            <figure class="figure-card mx-auto">
+              <img class="card-img-top card3" alt="...">
+            </figure>
+            <div class="card-body">
+              <h5 class="card-title">Barca</h5>
+              <p class="card-text">Barba de açaí frozen com acompanhamentos é uma deliciosa opção saudável e divertida
+                para dividir com amigos.</p>
+              <!--button-modal-barca-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#barca-modal">Ver mais</button>
+            </div>
+          </div>
+        </div>
 
-        <dl class="acompanhemeto">
-            <dt>
-              Acompanhamento &#40;até 5&#41;:
-            </dt>
-            <ul>
-              <li class="li-main">Granola</li>
-              <li class="li-main">Leite Condensado</li>
-              <li class="li-main">Banana</li>
-              <li class="li-main">Morango</li>
-              <li class="li-main">Paçoca</li>
-              <li class="li-main">Confete</li>
-              <li class="li-main">Leite em pó</li>
-              <li class="li-main">Chocobow</li>
-              <li class="li-main">Jujuba</li>
-              <li class="li-main">Nutella</li>
-            </ul>
-        </dl>
+      </div> <!--/row-->
+    </div> <!--/container-->
+
+    <!--POLPA-MODAL-->
+    <div class="modal fade" id="polpa-modal" tabindex="-1" aria-labelledby="polpaModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="CopoModalLabel">Polpa - Opções</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <dl class="tamanhos">
+              <dt>
+                Tamanhos
+              </dt>
+              <ul>
+                <li>1kg</li>
+                <li>500g</li>
+              </ul>
+            </dl>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
       </div>
     </div>
+
+
+    <!--COPO-MODAL-->
+    <div class="modal fade" id="copo-modal" tabindex="-1" aria-labelledby="copoModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="CopoModalLabel">Copo - Opções</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <dl class="tamanhos">
+              <dt>
+                Tamanhos:
+              </dt>
+              <ul class="list-main">
+                <li class="li-main">200ml</li>
+                <li class="li-main">300ml</li>
+                <li class="li-main">500ml</li>
+                <li class="li-main">1L</li>
+              </ul>
+            </dl>
+
+            <dl class="acompanhemeto">
+              <dt>
+                Acompanhamento &#40;até 5&#41;:
+              </dt>
+              <ul>
+                <li class="li-main">Granola</li>
+                <li class="li-main">Leite Condensado</li>
+                <li class="li-main">Banana</li>
+                <li class="li-main">Morango</li>
+                <li class="li-main">Paçoca</li>
+                <li class="li-main">Confete</li>
+                <li class="li-main">Leite em pó</li>
+                <li class="li-main">Chocobow</li>
+                <li class="li-main">Jujuba</li>
+                <li class="li-main">Nutella</li>
+              </ul>
+            </dl>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <!--BARCA-MODAL-->
+    <div class="modal fade" id="barca-modal" tabindex="-1" aria-labelledby="barcaModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="CopoModalLabel">Barca - Opções</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <dl class="tamanhos">
+              <dt>
+                Tamanhos:
+              </dt>
+              <ul class="list-main">
+                <li class="li-main">1L</li>
+                <li class="li-main">1.5L</li>
+                <li class="li-main">2L</li>
+                <li class="li-main">2.5L</li>
+              </ul>
+            </dl>
+
+            <dl class="acompanhemeto">
+              <dt>
+                Acompanhamento &#40;até 8&#41;:
+              </dt>
+              <ul>
+                <li class="li-main">Granola</li>
+                <li class="li-main">Leite Condensado</li>
+                <li class="li-main">Banana</li>
+                <li class="li-main">Morango</li>
+                <li class="li-main">Paçoca</li>
+                <li class="li-main">Confete</li>
+                <li class="li-main">Leite em pó</li>
+                <li class="li-main">Chocobow</li>
+                <li class="li-main">Jujuba</li>
+                <li class="li-main">Nutella</li>
+              </ul>
+            </dl>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+
   </main>
+
   <footer>
     <div class="row">
       <div class="all">
@@ -88,7 +231,7 @@
           <li><a href="">Quem Somos</a></li>
           <li><a href="">Missão</a></li>
           <li><a href="">Produtos</a></li>
-          <li><a href="">contatos</a></li>
+          <li class="trabalheconosco"><a href="./formulario.html"><b>Trabalhe Conosco</b></a></li>
         </ul>
       </div>
 
@@ -112,6 +255,11 @@
     </div>
     <hr>
     <p class="copyright">curso de programação 2022-all Rights Reserved</p>
-  </footer> 
+  </footer>
+  <!--BOOTSTRAP SCRIPT-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+
+
+   :root {
+     --cor-azulclaro: #AEE5E5;
+     --cor-rosa-bb: #F3C7E6;
+     --cor-amarelo: #FFEAA9;
+     --cor-rosa-escuro: #F25A70;
+     --cor-azul---: #98dfee;
+   }
+
+   .color-body {
+     background-color: var(--cor-rosa-bb);
+   }
+
+   li {
+     list-style: none;
+   }
+
+   a {
+     text-decoration: none;
+   }
+
+
+   /*----------------------------------Main------------------------------------*/
+
+
+   main {
+     background-size: cover;
+   }
+
+   nav {
+     text-align: right;
+     margin-right: 50px;
+   }
+
+   .aqui-tem {
+     font-family: 'EB Garamond', serif;
+     font-size: 2.0rem;
+     text-align: center;
+     padding: 50px;
+     background-color: var(--cor-azul---);
+   }
+
+   .sorvete {
+     font-size: 35px;
+     margin-left: 40px;
+   }
+
+   .section-principal {
+     background-color: #F3C7E6;
+   }
+
+   .galery {
+     width: 30%;
+     width: 30%;
+   }
+
+   .div-principal {
+     background-image: url("../images/principal.png");
+     background-repeat: no-repeat;
+     background-position: 100% 30%;
+     padding: 70px;
+   }
+
+
+   main section h1 {
+     font-family: 'EB Garamond', serif;
+     font-size: 70px;
+     padding: 30px;
+     text-align: center;
+   }
+
+   main section p {
+    font-family: 'EB Garamond', serif;
+     font-size: 30px;
+     text-align: justify;
+     text-indent: 20px;
+   }
+
+
+   .bloco-img {
+     width: 300px;
+     height: 300px;
+   }
+
+   .cor {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     width: 100%;
+     min-width: 100vh;
+     flex-wrap: wrap;
+   }
+/*-----------------------------cards-----------------------------*/
+
+   .card-main {
+     width: 300px;
+     height: 400px;
+     margin: 35px;
+     cursor: grab;
+     text-align: center;
+     /*criar efeito paralax*/
+     transform-style: preserve-3d;
+     transform: perspective(1000px);
+     transform: translateZ(20px);
+     background-color: #30bbf1;
+   }
+
+   .bnt-main {
+     width: auto;
+     padding: 10px;
+     font-size: 25px;
+     background: white;
+     margin: 10px;
+     border: none;
+     border-radius: 20px;
+     /*efeito paralax interno*/
+     transform: translateZ(40px) scale(1.2);
+     background-color: var(--cor-rosa-bb);
+   }
+
