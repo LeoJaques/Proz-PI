@@ -107,9 +107,17 @@ footer {
 }
 
 .all h3 {
+  font-size: 20px;
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
+}
+
+.all p {
+    font-size: 15px;
+}
+.all li a{
+  font-size: 18px;
 }
 
 .email-id {
@@ -122,7 +130,6 @@ footer {
   width: fit-content;
   border-bottom: 1px solid var(--cor-rosa-escuro);
   margin: 20px 0;
-  font-size: 15px;
 }
 
 ul li {
