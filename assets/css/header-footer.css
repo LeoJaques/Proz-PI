@@ -43,7 +43,9 @@ header {
 .nav-link{
   padding: 5px;
   display: inline;
+  font-size: 1.3rem;
 }
+
 
 .nav-link:hover {
   display: inline;
