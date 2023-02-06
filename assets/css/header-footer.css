@@ -40,12 +40,17 @@ header {
   
 }
 
+.nav-link{
+  padding: 5px;
+  display: inline;
+}
+
 .nav-link:hover {
-  display: inline-block;
+  display: inline;
   background-color: #F25A70;
   border-radius: 30px;
   color: var(--cor-azulclaro);
-  
+  padding: 5px;
   transition: .5s;
 }
 
