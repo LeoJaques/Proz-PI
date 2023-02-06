@@ -37,22 +37,20 @@ header {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
+  
 }
 
-header .header-menu a:hover {
+.nav-link:hover {
   display: inline-block;
   background-color: #F25A70;
   border-radius: 30px;
   color: var(--cor-azulclaro);
-  height: 60px;
-  line-height: 60px;
-  padding-left: 25px;
-  padding-right: 25px;
+  
   transition: .5s;
 }
 
 a {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 500;
   text-decoration: none;
   margin-right: 40px;
