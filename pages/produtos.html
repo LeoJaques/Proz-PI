@@ -2,86 +2,121 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/463b6a11a4.js"></script> 
-    <title>Produtos</title>
-    <link rel="stylesheet" href="../assets/css/produtos.css">
-    <link rel="stylesheet" href="../assets/css/header-footer.css">
-    <style>
-      .img {
-        height: 320px;
-        width: 280px;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/463b6a11a4.js"></script>
+  <title>Produtos</title>
+  <!--BOOTSTRAP CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/produtos.css">
+  <link rel="stylesheet" href="../assets/css/header-footer.css">
+  <style>
+    .img {
+      height: 320px;
+      width: 280px;
+    }
+  </style>
 </head>
 
 <body class="produtos">
   <header>
-    <div class="header-container">
-      <div class="header-logo">
-        <img src="../assets/images/logo.png" alt="logo">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-3">
+        <a class="navbar-brand header-logo" href="../index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link header-nav-link " aria-current="page" href="../index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-nav-link" aria-current="page" href="./quemSomos.html">Quem Somos</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link header-nav-link" aria-current="page" href="./missao.html">Missão</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle header-nav-link" href="./produtos.html" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Produtos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./produtos.html">Ver Todos</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="./picoles.html">Picolés</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./sorvetes.html">Sorvetes</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./milkshake.html">Milk-Skake</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./acai.html">Açaí</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./potessorvete.html">Pote de Sorvete</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " aria-current="page" href="./geolocalizacao.html">Localização</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav class="header-nav">
-        <ul class="header-menu">
-          <li><a href="../index.html" class="header-nav-link nav-inicio">Inicio</a></li>
-          <li><a href="./quemSomos.html" class="header-nav-link nav-quem-somos">Quem Somos</a></li>
-          <li><a href="./missao.html" class="header-nav-link nav-missao">Missão</a></li>
-          <li><a href="./produtos.html" class="header-nav-link nav-produtos">Produtos</a></li>
-          <li><a href="./geolocalizacao.html" class="header-nav-link nav-localização">Localização</a></li>
-        </ul>
-      </nav>
-    </div>
+    </nav>
+
   </header>
 
   <main>
     <h1 class="produtos-h1">Produtos</h1>
-    <p class="produtos-p">A Sweet Dreams Sorvetes oferece uma experiência única para você! Aqui oferecemos uma grande variedades de produtos, desde Picolés à Milk-Shake</p>
+    <p class="produtos-p">A Sweet Dreams Sorvetes oferece uma experiência única para você! Aqui oferecemos uma grande
+      variedades de produtos, desde Picolés à Milk-Shake</p>
     <section class="container-produtos">
       <div class="item1">
-          <a href="./picoles.html" class="link">
-            <img src="../assets/images/Picolés_produtos.png "
-            width="400px"
-            alt="Picolés">
-            <h2 class="produtos-h2">Picolés</h2>
-          </a>
+        <a href="./picoles.html" class="link">
+          <img src="../assets/images/Picolés_produtos.png " width="400px" alt="Picolés">
+          <h2 class="produtos-h2">Picolés</h2>
+        </a>
       </div>
       <div class="item2">
-          <a href="./sorvetes.html" class="link">
-            <img src="../assets/images/sorvetes_produtos.png"
-            width="400px"
-            alt="Sorvetes">
-            <h2 class="produtos-h2">Sorvetes</h2>
-          </a>
+        <a href="./sorvetes.html" class="link">
+          <img src="../assets/images/sorvetes_produtos.png" width="400px" alt="Sorvetes">
+          <h2 class="produtos-h2">Sorvetes</h2>
+        </a>
       </div>
-      <div class="item2" >
-          <a href="./milkshake.html" class="link">
-            <img src="../assets/images/milkshake_produtos.png"
-            width="400px"
-            alt="Milk-Shake">
-            <h2 class="produtos-h2">Milk-Shake</h2>
-          </a>
+      <div class="item2">
+        <a href="./milkshake.html" class="link">
+          <img src="../assets/images/milkshake_produtos.png" width="400px" alt="Milk-Shake">
+          <h2 class="produtos-h2">Milk-Shake</h2>
+        </a>
       </div>
       <div class="item1">
-          <a href="acai.html" class="link">
-            <img src="../assets/images/acai_produtos.png"
-            width="400px"
-            alt="Açaí">
-            <h2 class="produtos-h2">Açaí</h2>
-          </a>
+        <a href="acai.html" class="link">
+          <img src="../assets/images/acai_produtos.png" width="400px" alt="Açaí">
+          <h2 class="produtos-h2">Açaí</h2>
+        </a>
       </div>
       <div class="item1">
-          <a href="potessorvete.html" class="link">
-            <img src="../assets/images/potes_sorvetes_produtos.png"
-            width="400px"
-            alt="Potes de Sorvetes">
-            <h2 class="produtos-h2">Potes de Sorvetes</h2>
-          </a>
+        <a href="potessorvete.html" class="link">
+          <img src="../assets/images/potes_sorvetes_produtos.png" width="400px" alt="Potes de Sorvetes">
+          <h2 class="produtos-h2">Potes de Sorvetes</h2>
+        </a>
       </div>
     </section>
   </main>
-  
+
   <footer>
     <div class="row">
       <div class="all">
@@ -130,6 +165,11 @@
     <hr>
     <p class="copyright">curso de programação 2022-all Rights Reserved</p>
   </footer>
+  <!--BOOTSTRAP SCRIPT-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>

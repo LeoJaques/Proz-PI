@@ -1,113 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="missao">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/463b6a11a4.js"></script>
-    <link rel="stylesheet" href="../assets/css/missao.css">
-    <link rel="stylesheet" href="../assets/css/header-footer.css">
-    <title>Missão</title>
-  
-  </head>
-  <div class="sorvete">
-    
-  </div>
-  <body class="missao">
-    <header>
-      <div class="header-container">
-        <div class="header-logo">
-          <img src="../assets/images/logo.png" alt="logo">
-        </div>
-        <nav class="header-nav">
-          <ul class="header-menu">
-            <li><a href="../index.html" class="header-nav-link nav-inicio">Inicio</a></li>
-            <li><a href="./quemSomos.html" class="header-nav-link nav-quem-somos">Quem Somos</a></li>
-            <li><a href="./missao.html" class="header-nav-link nav-missao">Missão</a></li>
-            <li><a href="./produtos.html" class="header-nav-link nav-produtos">Produtos</a></li>
-            <li><a href="./geolocalizacao.html" class="header-nav-link nav-localização">Localização</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="borda">
-      <div class="container">
-        <h1>Missão!</h1>   
-        <p class="primeiro">
-          Nossa filosofia é oferecer sorvetes e picolés de altíssima qualidade
-          produzidos com os mais rigorosos padrões de higiene, em uma grande
-          variedade de sabores, com destaque nos sabores regionais, usando
-          matérias-primas inovadoras e altamente selecionadas, no melhor
-          custo-benefício do mercado.
-        </p>
-        <p>
-          Oferecer não só prazer e diversão, mas um alimento completo,
-          balanceado com todos os nutrientes necessários &#40;proteínas,
-          vitaminas, sais minerais e fibras prebióticas&#41;.
-        </p>
-        <p>
-          Para grupos especiais e conscientes sorvetes e picolés LIGHT, FITNESS
-          WHEY, LIFE PLUS e BIO PLUS, todos sem adição de açúcar e gordura, sem
-          glúten, sem significativa quantidade de sódio e enriquecidos com
-          ingredientes que promovem o bem-estar do corpo com um mínimo de
-          calorias. Para grupos com intoleráncia a lactose a linha Free sem
-          lactose e glúten.
-        </p>
-        <p class="ultimo">
-          Nosso objetivo é criar uma rede de prosperidade com todos que estão
-          ligados ao nosso negócio: fornecedores ,revendedores, funcionários,
-          clientes e a sociedade.
-        </p>
-      </div>
-    </main>
-    <div></div>
-    <footer>
-      <div class="row">
-        <div class="all">
-          <div class="logo-img-caixa">
-            <img src="../assets/images/logo.png" class="logo-footer" />
-          </div>
-        </div>
-        <div class="all">
-          <h3>Unidades<div class="underline"><span></span></div>
-          </h3>
-          <p>Av.Brasil</p>
-          <p>Bairro: 31 de Janeiro</p>
-          <p>São Paulo, Capital,Brazil</p>
-          <p class="email-id">sweet-dreams@gmail.com</p>
-          <h3>(15) xxxx-xxxx</h3>
-        </div>
-        <div class="all">
-          <h3>Link <div class="underline"></div><span></span></h3>
-          <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Quem Somos</a></li>
-            <li><a href="">Missão</a></li>
-            <li><a href="">Produtos</a></li>
-            <li class="trabalheconosco"><a href="formulario.html"><b>Trabalhe Conosco</b></a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/463b6a11a4.js"></script>
+  <!--BOOTSTRAP CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../assets/css/missao.css">
+  <link rel="stylesheet" href="../assets/css/header-footer.css">
+  <title>Missão</title>
+
+</head>
+<div class="sorvete">
+
+</div>
+
+<body class="missao">
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-3">
+        <a class="navbar-brand header-logo" href="../index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link header-nav-link " aria-current="page" href="../index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-nav-link" aria-current="page" href="./quemSomos.html">Quem Somos</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link header-nav-link" aria-current="page" href="./missao.html">Missão</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle header-nav-link" href="./produtos.html" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Produtos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./produtos.html">Ver Todos</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="./picoles.html">Picolés</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./sorvetes.html">Sorvetes</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./milkshake.html">Milk-Skake</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./acai.html">Açaí</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./potessorvete.html">Pote de Sorvete</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " aria-current="page" href="./geolocalizacao.html">Localização</a>
+            </li>
           </ul>
         </div>
-  
-        <div class="all">
-          <h3>Deixe seu email para contato<div class="underline"></div><span></span></h3>
-          <form action="">
-            <i class="fa-regular fa-envelope"></i>
-            <input type="Email" placeholder="digite seu email" required />
-            <button type="Enviar">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </form>
-          <div class="social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-tiktok"></i>
-          </div>
+      </div>
+    </nav>
+
+  </header>
+  <main class="borda">
+    <div class="container">
+      <h1>Missão!</h1>
+      <p class="primeiro">
+        Nossa filosofia é oferecer sorvetes e picolés de altíssima qualidade
+        produzidos com os mais rigorosos padrões de higiene, em uma grande
+        variedade de sabores, com destaque nos sabores regionais, usando
+        matérias-primas inovadoras e altamente selecionadas, no melhor
+        custo-benefício do mercado.
+      </p>
+      <p>
+        Oferecer não só prazer e diversão, mas um alimento completo,
+        balanceado com todos os nutrientes necessários &#40;proteínas,
+        vitaminas, sais minerais e fibras prebióticas&#41;.
+      </p>
+      <p>
+        Para grupos especiais e conscientes sorvetes e picolés LIGHT, FITNESS
+        WHEY, LIFE PLUS e BIO PLUS, todos sem adição de açúcar e gordura, sem
+        glúten, sem significativa quantidade de sódio e enriquecidos com
+        ingredientes que promovem o bem-estar do corpo com um mínimo de
+        calorias. Para grupos com intoleráncia a lactose a linha Free sem
+        lactose e glúten.
+      </p>
+      <p class="ultimo">
+        Nosso objetivo é criar uma rede de prosperidade com todos que estão
+        ligados ao nosso negócio: fornecedores ,revendedores, funcionários,
+        clientes e a sociedade.
+      </p>
+    </div>
+  </main>
+  <div></div>
+  <footer>
+    <div class="row">
+      <div class="all">
+        <div class="logo-img-caixa">
+          <img src="../assets/images/logo.png" class="logo-footer" />
         </div>
       </div>
-      <hr>
-      <p class="copyright">curso de programação 2022-all Rights Reserved</p>
-    </footer>
-  </body>
+      <div class="all">
+        <h3>Unidades<div class="underline"><span></span></div>
+        </h3>
+        <p>Av.Brasil</p>
+        <p>Bairro: 31 de Janeiro</p>
+        <p>São Paulo, Capital,Brazil</p>
+        <p class="email-id">sweet-dreams@gmail.com</p>
+        <h3>(15) xxxx-xxxx</h3>
+      </div>
+      <div class="all">
+        <h3>Link <div class="underline"></div><span></span></h3>
+        <ul>
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Quem Somos</a></li>
+          <li><a href="">Missão</a></li>
+          <li><a href="">Produtos</a></li>
+          <li class="trabalheconosco"><a href="formulario.html"><b>Trabalhe Conosco</b></a></li>
+        </ul>
+      </div>
+
+      <div class="all">
+        <h3>Deixe seu email para contato<div class="underline"></div><span></span></h3>
+        <form action="">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="Email" placeholder="digite seu email" required />
+          <button type="Enviar">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">curso de programação 2022-all Rights Reserved</p>
+  </footer>
+  <!--BOOTSTRAP SCRIPT-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
