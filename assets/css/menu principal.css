@@ -7,8 +7,8 @@
    }
 
    body {
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw; */
+    /* height: 100vh; */
     overflow-x: hidden;
    }
 
@@ -97,11 +97,11 @@
 
 
    .bloco-img {
-     width: 300px;
+     width: 100%;
      height: 300px;
    }
 
-   .cor {
+   /* .cor {
      display: flex;
      justify-content: space-between;
      flex-direction: row;
@@ -110,12 +110,12 @@
      width: 100%;
      min-width: 100vh;
      flex-wrap: wrap;
-   }
+   } */
 
 /*-----------------------------cards-----------------------------*/
 
    .card-main {
-     width: 300px;
+     max-width: 300px;
      height: 400px;
      margin: 35px auto;
      cursor: grab;
@@ -130,7 +130,7 @@
    .bnt-main {
      width: auto;
      padding: 10px;
-     font-size: 25px;
+     font-size: 1.3rem;
      background: white;
      margin: 10px;
      border: none;
