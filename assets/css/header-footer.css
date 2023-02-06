@@ -40,6 +40,12 @@ header {
   
 }
 
+
+nav {
+  text-align: right;
+
+}
+
 .nav-link{
   padding: 5px;
   display: inline;
