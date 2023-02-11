@@ -1,0 +1,125 @@
+Código de criação da tabela
+CREATE TABLE estado_civil (
+  id serial PRIMARY KEY,
+  estado_civil varchar(20) NOT NULL
+);
+
+CREATE TABLE escolaridade (
+  id serial PRIMARY KEY,
+  escolaridade varchar(50) NOT NULL
+);
+
+CREATE TABLE produtos (
+  id serial PRIMARY KEY,
+  nome varchar(100) NOT NULL,
+  descricao text NOT NULL,
+  preco numeric NOT NULL
+);
+
+CREATE TABLE clientes (
+  id serial PRIMARY KEY,
+  nome varchar(100) NOT NULL,
+  email varchar(100),
+  telefone varchar(20)
+);
+
+CREATE TABLE trabalhe_conosco (
+  id serial PRIMARY KEY,
+  nome varchar(100) NOT NULL,
+  sobrenome varchar(100) NOT NULL,
+  email varchar(100) NOT NULL,
+  telefone varchar(20) NOT NULL,
+  data_nascimento date NOT NULL,
+  id_estado_civil integer REFERENCES estado_civil(id),
+  filhos integer DEFAULT 0,
+  id_escolaridade integer REFERENCES escolaridade(id),
+  sobre text,
+  arquivo text
+);
+
+CREATE TABLE promocoes (
+  id serial PRIMARY KEY,
+  id_produto integer REFERENCES produtos(id),
+  id_cliente integer REFERENCES clientes(id),
+  data_inicio date NOT NULL,
+  data_fim date NOT NULL,
+  percent_desc numeric NOT NULL,
+  CONSTRAINT fk_promocoes_produtos FOREIGN KEY (id_produto) REFERENCES produtos(id),
+  CONSTRAINT fk_promocoes_clientes FOREIGN KEY (id_cliente) REFERENCES clientes(id)
+);
+
+<!------------------------------>
+código para inserir dados:
+INSERT INTO estado_civil (estado_civil) VALUES 
+('Solteiro'),
+('Casado');
+
+INSERT INTO escolaridade (escolaridade) VALUES
+('Ensino médio incompleto'), 
+('Ensino médio completo'), 
+('Ensino superior Completo');
+
+INSERT INTO produtos (nome, preco, descricao) VALUES 
+('Açai', 10.0, 'Açai natural'), 
+('Sorvete', 5.0, 'Sorvete de creme'), 
+('Milkshake', 7.0, 'Milkshake de baunilha'), 
+('Pote de sorvete', 15.0, 'Pote de sorvete de creme'), 
+('Picolé', 2.0, 'Picolé de frutas vermelhas');
+
+INSERT INTO clientes(nome, email, telefone) VALUES
+('João Silva', 'joaosilva@email.com', '11 12345-6789'),
+('Maria Santos', 'mariasantos@email.com', '11 98765-4321'),
+('Pedro Oliveira', 'pedrooliveira@email.com', '11 56789-1234'),
+('Juliana Almeida', 'julianaalmeida@email.com', '11 98745-1236'),
+('Lucas Costa', 'lucascosta@email.com', '11 87654-1235');
+
+INSERT INTO trabalhe_conosco (nome, sobrenome, email, telefone, data_nascimento, id_estado_civil, filhos, id_escolaridade, sobre, arquivo)
+VALUES 
+('Fernando', 'Silva', 'fernandosilva@email.com', '11 12345-6789', '1980-01-01', 1, 0, 1, 'Sou desenvolvedor web', 'curriculo.pdf'),
+('Ana', 'Santos', 'anasantos@email.com', '11 98765-4321', '1990-05-05', 2, 2, 2, 'Sou analista de sistemas', 'curriculo.pdf'),
+('Lucas', 'Oliveira', 'lucasoliveira@email.com', '11 56789-1234', '1985-10-10', 1, 1, 2, 'Sou gerente de projetos', 'curriculo.pdf'),
+('Julia', 'Almeida', 'juliaalmeida@email.com', '11 98745-1236', '1995-02-01', 1, 0, 2, 'Sou estudante de marketing', 'curriculo.pdf'),
+('Gustavo', 'Costa', 'gustavocosta@email.com', '11 87654-1235', '1988-08-08', 2, 1, 3, 'Sou administrador de empresas', 'curriculo.pdf');
+
+INSERT INTO promocoes (id_produto, id_cliente, data_inicio, data_fim, percent_desc)
+VALUES (1, 2, '2023-03-01', '2023-03-15', 0.10),
+(2, 3, '2023-03-01', '2023-03-15', 0.15),
+(3, 4, '2023-03-01', '2023-03-15', 0.20),
+(4, 5, '2023-03-01', '2023-03-15', 0.25),
+(5, 2, '2023-03-01', '2023-03-15', 0.30);
+
+<!------------> 
+Comandos para consulta:
+
+SELECT * from estado_civil;
+
+SELECT * from escolaridade;
+
+SELECT * from produtos;
+
+SELECT * from promocoes;
+
+SELECT * from clientes;
+
+select * from trabalhe_conosco;
+
+SELECT trabalhe_conosco.nome, trabalhe_conosco.sobrenome, estado_civil.estado_civil, escolaridade.escolaridade 
+FROM trabalhe_conosco 
+LEFT JOIN estado_civil ON trabalhe_conosco.id_estado_civil = estado_civil.id
+LEFT JOIN escolaridade ON trabalhe_conosco.id_escolaridade = escolaridade.id;
+
+SELECT clientes.nome, promocoes.percent_desc, produtos.nome, produtos.preco
+FROM clientes
+RIGHT JOIN promocoes ON clientes.id = promocoes.id_cliente
+RIGHT JOIN produtos ON promocoes.id_produto = produtos.id;
+
+SELECT clientes.nome, produtos.nome, promocoes.percent_desc 
+FROM clientes
+INNER JOIN promocoes ON clientes.id = promocoes.id_cliente
+INNER JOIN produtos ON promocoes.id_produto = produtos.id;
+
+
+SELECT clientes.nome, clientes.email, produtos.nome
+FROM clientes
+JOIN promocoes ON clientes.id = promocoes.id
+JOIN produtos ON promocoes.id = produtos.id;
