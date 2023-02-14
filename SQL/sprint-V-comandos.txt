@@ -23,6 +23,21 @@ CREATE TABLE clientes (
   telefone varchar(20)
 );
 
+CREATE TABLE promocoes (
+  id serial PRIMARY KEY,
+  id_produto integer NOT NULL REFERENCES produtos(id),
+  data_inicio date NOT NULL,
+  data_fim date NOT NULL,
+  percent_desc numeric NOT NULL,
+  CONSTRAINT fk_promocoes_produtos FOREIGN KEY (id_produto) REFERENCES produtos(id)
+);
+
+CREATE TABLE promocoes_clientes (
+  id serial PRIMARY KEY,
+  id_promocao integer NOT NULL REFERENCES promocoes(id),
+  id_cliente integer NOT NULL REFERENCES clientes(id)
+);
+
 CREATE TABLE trabalhe_conosco (
   id serial PRIMARY KEY,
   nome varchar(100) NOT NULL,
@@ -35,17 +50,6 @@ CREATE TABLE trabalhe_conosco (
   id_escolaridade integer REFERENCES escolaridade(id),
   sobre text,
   arquivo text
-);
-
-CREATE TABLE promocoes (
-  id serial PRIMARY KEY,
-  id_produto integer REFERENCES produtos(id),
-  id_cliente integer REFERENCES clientes(id),
-  data_inicio date NOT NULL,
-  data_fim date NOT NULL,
-  percent_desc numeric NOT NULL,
-  CONSTRAINT fk_promocoes_produtos FOREIGN KEY (id_produto) REFERENCES produtos(id),
-  CONSTRAINT fk_promocoes_clientes FOREIGN KEY (id_cliente) REFERENCES clientes(id)
 );
 
 <!------------------------------>
@@ -81,13 +85,19 @@ VALUES
 ('Julia', 'Almeida', 'juliaalmeida@email.com', '11 98745-1236', '1995-02-01', 1, 0, 2, 'Sou estudante de marketing', 'curriculo.pdf'),
 ('Gustavo', 'Costa', 'gustavocosta@email.com', '11 87654-1235', '1988-08-08', 2, 1, 3, 'Sou administrador de empresas', 'curriculo.pdf');
 
-INSERT INTO promocoes (id_produto, id_cliente, data_inicio, data_fim, percent_desc)
-VALUES (1, 2, '2023-03-01', '2023-03-15', 0.10),
-(2, 3, '2023-03-01', '2023-03-15', 0.15),
-(3, 4, '2023-03-01', '2023-03-15', 0.20),
-(4, 5, '2023-03-01', '2023-03-15', 0.25),
-(5, 2, '2023-03-01', '2023-03-15', 0.30);
+INSERT INTO promocoes (id_produto, data_inicio, data_fim, percent_desc)
+VALUES (1, '2023-03-01', '2023-03-15', 0.10),
+(2, '2023-03-01', '2023-03-15', 0.15),
+(3, '2023-03-01', '2023-03-15', 0.20),
+(4, '2023-03-01', '2023-03-15', 0.25),
+(5, '2023-03-01', '2023-03-15', 0.30);
 
+INSERT INTO promocoes_clientes (id_promocao, id_cliente) VALUES
+  (1, 1),
+  (1, 3),
+  (2, 2),
+  (3, 1),
+  (3, 2);
 <!------------> 
 Comandos para consulta:
 
@@ -95,31 +105,32 @@ SELECT * from estado_civil;
 
 SELECT * from escolaridade;
 
+select * from trabalhe_conosco;
+
 SELECT * from produtos;
 
 SELECT * from promocoes;
 
 SELECT * from clientes;
 
-select * from trabalhe_conosco;
+select * from promocoes_clientes;
 
 SELECT trabalhe_conosco.nome, trabalhe_conosco.sobrenome, estado_civil.estado_civil, escolaridade.escolaridade 
 FROM trabalhe_conosco 
 LEFT JOIN estado_civil ON trabalhe_conosco.id_estado_civil = estado_civil.id
 LEFT JOIN escolaridade ON trabalhe_conosco.id_escolaridade = escolaridade.id;
 
-SELECT clientes.nome, promocoes.percent_desc, produtos.nome, produtos.preco
-FROM clientes
-RIGHT JOIN promocoes ON clientes.id = promocoes.id_cliente
-RIGHT JOIN produtos ON promocoes.id_produto = produtos.id;
-
-SELECT clientes.nome, produtos.nome, promocoes.percent_desc 
-FROM clientes
-INNER JOIN promocoes ON clientes.id = promocoes.id_cliente
+SELECT clientes.nome, promocoes.percent_desc, produtos.nome
+FROM promocoes_clientes
+INNER JOIN clientes ON promocoes_clientes.id_cliente = clientes.id
+INNER JOIN promocoes ON promocoes_clientes.id_promocao = promocoes.id
 INNER JOIN produtos ON promocoes.id_produto = produtos.id;
 
 
-SELECT clientes.nome, clientes.email, produtos.nome
-FROM clientes
-JOIN promocoes ON clientes.id = promocoes.id
-JOIN produtos ON promocoes.id = produtos.id;
+SELECT clientes.nome, promocoes.percent_desc, produtos.nome
+FROM promocoes_clientes
+INNER JOIN clientes ON promocoes_clientes.id_cliente = clientes.id
+INNER JOIN promocoes ON promocoes_clientes.id_promocao = promocoes.id
+INNER JOIN produtos ON promocoes.id_produto = produtos.id
+WHERE produtos.nome = 'Açai';
+
